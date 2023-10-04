@@ -1,9 +1,9 @@
 
 
 {
-  "name": "Chirpy",
-  "short_name": "Chirpy",
-  "description": "A minimal, responsive and feature-rich Jekyll theme for technical writing.",
+  "name": "Maker Forge",
+  "short_name": "Maker Forge",
+  "description": "Guides and news relating to Maker Forge projects and videos.",
   "icons": [
     {
       "src": "/assets/img/favicons/android-chrome-192x192.png",

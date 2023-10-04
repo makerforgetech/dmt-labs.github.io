@@ -35,28 +35,42 @@
   
 
   
+    
+
+    
+      
+      
+
+      
+        <!-- it's a local file path -->
+
+      
+    
+  
 
   
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.2" />
-<meta property="og:title" content="Categories" />
+<meta property="og:title" content="Modular Robotics with Raspberry Pi and Python" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="Guides and news relating to Maker Forge projects and videos." />
-<meta property="og:description" content="Guides and news relating to Maker Forge projects and videos." />
-<link rel="canonical" href="http://localhost:4000/categories/" />
-<meta property="og:url" content="http://localhost:4000/categories/" />
+<meta name="description" content="As a project to keep myself sane during the COVID lockdowns, I began looking into making a companion robot using Raspberry Pi, Arduino and 3D printing as a study in how to build a desktop companion robot. I wanted to make something that was fully autonomous and responded to the presense and interaction of people in the room. It also needed to be reasonably affordable (as much as robotics can be!) and accessible." />
+<meta property="og:description" content="As a project to keep myself sane during the COVID lockdowns, I began looking into making a companion robot using Raspberry Pi, Arduino and 3D printing as a study in how to build a desktop companion robot. I wanted to make something that was fully autonomous and responded to the presense and interaction of people in the room. It also needed to be reasonably affordable (as much as robotics can be!) and accessible." />
+<link rel="canonical" href="http://localhost:4000/posts/modular-robotics/" />
+<meta property="og:url" content="http://localhost:4000/posts/modular-robotics/" />
 <meta property="og:site_name" content="Maker Forge" />
+<meta property="og:image" content="http://localhost:4000/assets/img/posts/2023-10-04-modular-robotics/deck.png" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2023-10-04T13:51:34+01:00" />
-<meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Categories" />
+<meta property="article:published_time" content="2023-10-03T00:00:00+01:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="http://localhost:4000/assets/img/posts/2023-10-04-modular-robotics/deck.png" />
+<meta property="twitter:title" content="Modular Robotics with Raspberry Pi and Python" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-10-04T13:51:34+01:00","datePublished":"2023-10-04T13:51:34+01:00","description":"Guides and news relating to Maker Forge projects and videos.","headline":"Categories","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/categories/"},"url":"http://localhost:4000/categories/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-10-03T00:00:00+01:00","datePublished":"2023-10-03T00:00:00+01:00","description":"As a project to keep myself sane during the COVID lockdowns, I began looking into making a companion robot using Raspberry Pi, Arduino and 3D printing as a study in how to build a desktop companion robot. I wanted to make something that was fully autonomous and responded to the presense and interaction of people in the room. It also needed to be reasonably affordable (as much as robotics can be!) and accessible.","headline":"Modular Robotics with Raspberry Pi and Python","image":"http://localhost:4000/assets/img/posts/2023-10-04-modular-robotics/deck.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/modular-robotics/"},"url":"http://localhost:4000/posts/modular-robotics/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
 
-  <title>Categories | Maker Forge
+  <title>Modular Robotics with Raspberry Pi and Python | Maker Forge
   </title>
 
   <!--
@@ -108,7 +122,12 @@
   <link rel="stylesheet" href="/assets/css/jekyll-theme-chirpy.css">
 
   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.21.1/dist/tocbot.min.css">
+  
 
+  
+    <!-- Manific Popup -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/magnific-popup.min.css">
   
 
   <!-- JavaScript -->
@@ -295,7 +314,7 @@
       </li>
       <!-- the real tabs -->
       
-        <li class="nav-item active">
+        <li class="nav-item">
           <a href="/categories/" class="nav-link">
             <i class="fa-fw fas fa-stream"></i>
             
@@ -444,8 +463,10 @@
           
         
           
+        
+          
             
-              <span>Categories</span>
+              <span>Modular Robotics with Raspberry Pi and Python</span>
             
 
           
@@ -459,7 +480,7 @@
     </button>
 
     <div id="topbar-title">
-      Categories
+      Post
     </div>
 
     <button type="button" id="search-trigger" class="btn btn-link">
@@ -485,37 +506,56 @@
         <div class="row">
           <main
             aria-label="Main Content"
-            class="col-12 col-lg-11 col-xl-9 px-md-4 pb-5"
+            class="col-12 col-lg-11 col-xl-9 px-md-4"
           >
             
 
 <article class="px-1">
   
     
+  
+    <!-- Refactor the HTML structure -->
+
+
+
+<!--
+  In order to allow a wide table to scroll horizontally,
+  we suround the markdown table with `<div class="table-wrapper">` and `</div>`
+-->
+
+
+
+<!--
+  Fixed kramdown code highlight rendering:
+  https://github.com/penibelst/jekyll-compress-html/issues/101
+  https://github.com/penibelst/jekyll-compress-html/issues/71#issuecomment-188144901
+-->
+
+
+
+<!-- Change the icon of checkbox -->
+
+
+<!-- images -->
+
+
+
+  
+  
+
+  <!-- CDN URL -->
+  
+
+  <!-- Add image path -->
+  
+
+  
     
-    <h1 class="dynamic-title">
-      Categories
-    </h1>
-    <div class="content">
       
-  
+      
     
 
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
+    
     
 
     
@@ -523,113 +563,551 @@
     
     
 
-    <div class="card categories">
-      <!-- top-category -->
-      <div
-        id="h_0"
-        class="card-header d-flex justify-content-between hide-border-bottom"
+    
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+
+    
+
+    
+
+    <!-- lazy-load images <https://github.com/aFarkas/lazysizes#readme> -->
+    
+    
+
+    <!-- add image placeholder -->
+    
+      
+        <!-- add SVG placehoder -->
+        
+      
+    
+
+    <!-- Bypass the HTML-proofer test -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+      
+    
+
+    <!-- combine -->
+    
+
+  
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+
+    
+
+    
+
+    <!-- lazy-load images <https://github.com/aFarkas/lazysizes#readme> -->
+    
+    
+
+    <!-- add image placeholder -->
+    
+      
+    
+
+    <!-- Bypass the HTML-proofer test -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+      
+    
+
+    <!-- combine -->
+    
+
+  
+
+  
+
+
+
+<!-- Add header for code snippets -->
+
+
+
+<!-- Create heading anchors -->
+
+
+
+
+
+  
+  
+
+  
+    
+    
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+
+    
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+<!-- return -->
+
+
+
+
+<header>
+  <h1 data-toc-skip>Modular Robotics with Raspberry Pi and Python</h1>
+
+  <div class="post-meta text-muted">
+    <!-- published date -->
+    <span>
+      Posted
+      <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1696287600"
+  data-df="ll"
+  
+    data-bs-toggle="tooltip" data-bs-placement="bottom"
+  
+>
+  Oct  3, 2023
+</time>
+
+    </span>
+
+    <!-- lastmod date -->
+    
+
+    
+      
+      
+      
+
+      
+
+      <div class="mt-3 mb-3">
+        <a href="/assets/img/posts/2023-10-04-modular-robotics/deck.png" class="popup img-link preview-img shimmer"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 630'%3E%3C/svg%3E" data-src="/assets/img/posts/2023-10-04-modular-robotics/deck.png"  alt="Preview Image" width="1200" height="630"  class="lazyload" data-proofer-ignore></a></div>
+    
+
+    <div class="d-flex justify-content-between">
+      <!-- author(s) -->
+      <span>
+        
+
+        By
+
+        <em>
+          
+            <a href="https://instagram.com/dan.makes.things">Dan Makes Things</a>
+          
+        </em>
+      </span>
+
+      <!-- read time -->
+      <!-- Calculate the post's reading time, and display the word count in tooltip -->
+
+
+
+<!-- words per minute -->
+
+
+
+
+
+
+
+
+
+
+<!-- return element -->
+<span
+  class="readtime"
+  data-bs-toggle="tooltip"
+  data-bs-placement="bottom"
+  title="475 words"
+>
+  <em>2 min</em> read</span>
+
+    </div>
+    <!-- .d-flex -->
+  </div>
+  <!-- .post-meta -->
+</header>
+
+<div class="content">
+  <p>As a project to keep myself sane during the COVID lockdowns, I began looking into making a companion robot using Raspberry Pi, Arduino and 3D printing as a study in how to build a desktop companion robot. I wanted to make something that was fully autonomous and responded to the presense and interaction of people in the room. It also needed to be reasonably affordable (as much as robotics can be!) and accessible.</p>
+
+<p>The project has evolved over the last few years and a community has begun to grow around it. This led to a number of changes to allow the platform to be more modular, allowing any number of robots to be created using the software with reuse of any relevant hardware components and modules.</p>
+
+<h2 id="overview"><span class="me-2">Overview</span><a href="#overview" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p><a href="/assets/img/posts/2023-10-04-modular-robotics/full_project_front_thumb.jpg" class="popup img-link "><img data-src="/assets/img/posts/2023-10-04-modular-robotics/full_project_front_thumb.jpg" alt="Full project (front view)" class="lazyload" data-proofer-ignore></a></p>
+
+<p>The Modular Biped Robot project is designed to provide a flexible and modular framework for robotics development using Python and C++ on the Raspberry Pi and Arduino platforms. It aims to enable developers, robotics enthusiasts, and curious individuals to experiment, create, and customize their own biped robots. With a range of features and functionalities and the option to add your own easily, the Modular Biped Robot Project offers an exciting opportunity to explore the world of robotics.</p>
+
+<h2 id="modularity"><span class="me-2">Modularity</span><a href="#modularity" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>The project is designed to be modular, meaning any components that are not required for the implementation can be removed and the functionality can be disabled by removing the initialisation in the <code class="language-plaintext highlighter-rouge">main.py</code> python file. Similarly, new modules can be integrated as easily by following the guide below.</p>
+
+<p><a href="https://github.com/dmt-labs/modular-biped/wiki/Software:-Modules">Modules</a></p>
+
+<p><a href="https://github.com/dmt-labs/modular-biped/wiki/Software:-Creating-a-module">Creating a Module</a></p>
+
+<h2 id="versioning"><span class="me-2">Versioning</span><a href="#versioning" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>There have been 3 versions of this project, version 2 was the smaller and less stable build detailed in the playlist below.</p>
+
+<p><a href="https://youtu.be/Nqp4vuDWgpw?si=W-4mwJQCqWwtEBne">Watch the introduction on YouTube</a></p>
+
+<p><a href="https://www.youtube.com/watch?v=2DVJ5xxAuWY&amp;list=PL_ua9QbuRTv6Kh8hiEXXVqywS8pklZraT">Companion Robot v2 Playlist</a></p>
+
+<p>The current development is ongoing on version 3. This documentation is exclusively for version 3.</p>
+
+<h2 id="platforms"><span class="me-2">Platforms</span><a href="#platforms" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>Although the project was built on the Raspberry Pi 3B+ and Arduino Pro Mini, community members are working on the integration of other platforms such as the Jetson Nano, Raspberry Pi 4 &amp; 5, Arduin Nano and the DFRobot UniHiker SBC.</p>
+
+<p>We plan on sharing any relevant files to support these platforms so feel free to join the community and share your experience / requirments.</p>
+
+<h2 id="contributions-and-discussions"><span class="me-2">Contributions and Discussions</span><a href="#contributions-and-discussions" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>We encourage active participation, contributions, and discussions from the Modular Biped Robot community. If you have any questions, ideas, suggestions, or would like to share your experiences, you can join our <a href="../discussions">GitHub Discussions</a> section dedicated to the project. It’s a great place to engage with other community members, exchange knowledge, and collaborate on the development of biped robotics.</p>
+
+<p>Read more here: <a href="../discussions/17">Community</a></p>
+
+<p>We look forward to your participation and the exciting advancements we can achieve together in the field of modular biped robots!</p>
+
+<h2 id="get-started"><span class="me-2">Get Started</span><a href="#get-started" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>The wiki and files are available on the GitHub repository linked below:</p>
+
+<p><a href="https://github.com/dmt-labs/modular-biped/wiki">Modular Biped Wiki</a></p>
+
+<p><a href="https://github.com/dmt-labs/modular-biped">Repository</a></p>
+
+<p><a href="https://github.com/dmt-labs/modular-biped/discussions">Discussions</a></p>
+
+</div>
+
+<div class="post-tail-wrapper text-muted">
+  <!-- categories -->
+  
+    <div class="post-meta mb-3">
+      <i class="far fa-folder-open fa-fw me-1"></i>
+      
+        <a href="/categories/guides/">Guides</a>,
+        <a href="/categories/robotics/">Robotics</a>
+    </div>
+  
+
+  <!-- tags -->
+  
+    <div class="post-tags">
+      <i class="fa fa-tags fa-fw me-1"></i>
+      
+        <a
+          href="/tags/modular/"
+          class="post-tag no-text-decoration"
+        >modular</a>
+      
+        <a
+          href="/tags/robotics/"
+          class="post-tag no-text-decoration"
+        >robotics</a>
+      
+        <a
+          href="/tags/framework/"
+          class="post-tag no-text-decoration"
+        >framework</a>
+      
+    </div>
+  
+
+  <div
+    class="
+      post-tail-bottom
+      d-flex justify-content-between align-items-center mt-5 pb-2
+    "
+  >
+    <div class="license-wrapper">
+      
+        
+
+        This post is licensed under 
+        <a href="https://creativecommons.org/licenses/by/4.0/">
+          CC BY 4.0
+        </a>
+         by the author.
+      
+    </div>
+
+    <!-- Post sharing snippet -->
+
+<div class="share-wrapper d-flex align-items-center">
+  <span class="share-label text-muted me-1">Share</span>
+  <span class="share-icons">
+    
+    
+    
+
+    
+      
+      <a
+        href="https://twitter.com/intent/tweet?text=Modular%20Robotics%20with%20Raspberry%20Pi%20and%20Python%20-%20Maker%20Forge&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fmodular-robotics%2F"
+        data-bs-toggle="tooltip"
+        data-bs-placement="top"
+        title="Twitter"
+        target="_blank"
+        rel="noopener"
+        aria-label="Twitter"
       >
-        <span class="ms-2">
-          <i class="far fa-folder-open fa-fw"></i>
-
-          
-          <a href="/categories/guides/" class="mx-2">Guides</a>
-
-          <!-- content count -->
-          
-          <span class="text-muted small font-weight-light">
-            
-              2
-              
-                categories
-              ,
-            
-
-            2
-
-            
-              posts
-            
-          </span>
-        </span>
-
-        <!-- arrow -->
-        
-          <a
-            href="#l_0"
-            data-bs-toggle="collapse"
-            aria-expanded="true"
-            aria-label="h_0-trigger"
-            class="category-trigger hide-border-bottom"
-          >
-            <i class="fas fa-fw fa-angle-down"></i>
-          </a>
-        
-      </div>
-      <!-- .card-header -->
-
-      <!-- Sub-categories -->
-      
-        <div id="l_0" class="collapse show" aria-expanded="true">
-          <ul class="list-group">
-            
-              <li class="list-group-item">
-                <i class="far fa-folder fa-fw"></i>
-
-                
-                <a href="/categories/robotics/" class="mx-2">Robotics</a>
-
-                
-                <span class="text-muted small font-weight-light">
-                  1
-
-                  
-                    post
-                  
-                </span>
-              </li>
-            
-              <li class="list-group-item">
-                <i class="far fa-folder fa-fw"></i>
-
-                
-                <a href="/categories/website/" class="mx-2">Website</a>
-
-                
-                <span class="text-muted small font-weight-light">
-                  1
-
-                  
-                    post
-                  
-                </span>
-              </li>
-            
-          </ul>
-        </div>
-      
-    </div>
-    <!-- .card -->
-
+        <i class="fa-fw fa-brands fa-square-x-twitter"></i>
+      </a>
     
-  
+      
+      <a
+        href="https://www.facebook.com/sharer/sharer.php?title=Modular%20Robotics%20with%20Raspberry%20Pi%20and%20Python%20-%20Maker%20Forge&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fmodular-robotics%2F"
+        data-bs-toggle="tooltip"
+        data-bs-placement="top"
+        title="Facebook"
+        target="_blank"
+        rel="noopener"
+        aria-label="Facebook"
+      >
+        <i class="fa-fw fab fa-facebook-square"></i>
+      </a>
+    
+      
+      <a
+        href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fmodular-robotics%2F&text=Modular%20Robotics%20with%20Raspberry%20Pi%20and%20Python%20-%20Maker%20Forge"
+        data-bs-toggle="tooltip"
+        data-bs-placement="top"
+        title="Telegram"
+        target="_blank"
+        rel="noopener"
+        aria-label="Telegram"
+      >
+        <i class="fa-fw fab fa-telegram"></i>
+      </a>
+    
+
+    <button
+      id="copy-link"
+      aria-label="Copy link"
+      class="btn small"
+      data-bs-toggle="tooltip"
+      data-bs-placement="top"
+      title="Copy link"
+      data-title-succeed="Link copied successfully!"
+    >
+      <i class="fa-fw fas fa-link pe-none"></i>
+    </button>
+  </span>
+</div>
+
+  </div>
+  <!-- .post-tail-bottom -->
+</div>
+<!-- div.post-tail-wrapper -->
+
 
   
-  
-  
 
-  
-
-  
-  
-  
-
-  
-
-
-  
-
-    </div>
   
 </article>
 
@@ -860,12 +1338,156 @@
             </div>
 
             
+              
+              
+
+
+
+  <section id="toc-wrapper" class="ps-0 pe-4 mb-5">
+    <h2 class="panel-heading ps-3 pt-2 mb-2">Contents</h2>
+    <nav id="toc"></nav>
+  </section>
+
+
+            
           </aside>
         </div>
 
         <div class="row">
           <!-- tail -->
           <div id="tail-wrapper" class="col-12 col-lg-11 col-xl-9 px-md-4">
+            
+              
+                
+                <!-- Recommend the other 3 posts according to the tags and categories of the current post. -->
+
+<!-- The total size of related posts -->
+
+
+<!-- An random integer that bigger than 0 -->
+
+
+<!-- Equals to TAG_SCORE / {max_categories_hierarchy} -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  <aside id="related-posts" aria-labelledby="related-label">
+    <h3 class="mb-4" id="related-label">Further Reading</h3>
+    <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
+      
+        <article class="col">
+          <a href="/posts/github-pages/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+    class="small"
+  
+  data-ts="1696287600"
+  data-df="ll"
+  
+>
+  Oct  3, 2023
+</time>
+
+              <h4 class="pt-0 my-2">Maker Websites with GitHub Pages | Free Hosting</h4>
+              <div class="text-muted small">
+                <p>
+                  
+
+
+
+
+
+                  As a maker that loves to show my projects to the world, one of the challenges I have always faced is understanding the best platform to do that.
+
+Many years ago I worked in web development. It was,...
+                </p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+    </nav>
+  </aside>
+  <!-- #related-posts -->
+
+
+              
+                
+                <!-- Navigation buttons at the bottom of the post. -->
+
+<nav class="post-navigation d-flex justify-content-between" aria-label="Post Navigation">
+  
+  
+
+  
+    <a
+      href="/posts/github-pages/"
+      class="btn btn-outline-primary"
+      aria-label="Older"
+    >
+      <p>Maker Websites with GitHub Pages | Free Hosting</p>
+    </a>
+  
+
+  
+    <div class="btn btn-outline-primary disabled" aria-label="Newer">
+      <p>-</p>
+    </div>
+  
+</nav>
+
+              
+                
+                <!--  The comments switcher -->
+
+
+              
             
 
             <!-- The Footer -->
@@ -1160,6 +1782,13 @@
 <!-- layout specified -->
 
 
+  
+
+  
+    <!-- image lazy-loading & popup & clipboard -->
+    
+  
+
 
 
 
@@ -1195,16 +1824,72 @@
 
   
 
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
 
 
-  <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.7.1/dist/jquery.min.js,npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js,npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.7.1/dist/jquery.min.js,npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js,npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/lazysizes@5.3.2/lazysizes.min.js,npm/magnific-popup@1.1.0/dist/jquery.magnific-popup.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js,npm/dayjs@1.11.9/dayjs.min.js,npm/dayjs@1.11.9/locale/en.min.js,npm/dayjs@1.11.9/plugin/relativeTime.min.js,npm/dayjs@1.11.9/plugin/localizedFormat.min.js,npm/tocbot@4.21.1/dist/tocbot.min.js"></script>
 
 
 
 
 
 
-<script defer src="/assets/js/dist/categories.min.js"></script>
+<script defer src="/assets/js/dist/post.min.js"></script>
 
 
 

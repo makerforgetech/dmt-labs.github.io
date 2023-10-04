@@ -2,21 +2,102 @@
 
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://localhost:4000/</id>
-  <title>Chirpy</title>
-  <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2023-10-03T09:02:31+01:00</updated>
+  <title>Maker Forge</title>
+  <subtitle>Guides and news relating to Maker Forge projects and videos.</subtitle>
+  <updated>2023-10-04T13:51:34+01:00</updated>
   <author>
-    <name>your_full_name</name>
+    <name>Dan Makes Things</name>
     <uri>http://localhost:4000/</uri>
   </author>
   <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en"
     href="http://localhost:4000/"/>
   <generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator>
-  <rights> © 2023 your_full_name </rights>
+  <rights> © 2023 Dan Makes Things </rights>
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Modular Robotics with Raspberry Pi and Python</title>
+    <link href="http://localhost:4000/posts/modular-robotics/" rel="alternate" type="text/html" title="Modular Robotics with Raspberry Pi and Python" />
+    <published>2023-10-03T00:00:00+01:00</published>
+  
+    <updated>2023-10-03T00:00:00+01:00</updated>
+  
+    <id>http://localhost:4000/posts/modular-robotics/</id>
+    <content src="http://localhost:4000/posts/modular-robotics/" />
+    <author>
+      <name>Dan Makes Things</name>
+    </author>
+
+  
+    
+    <category term="Guides" />
+    
+    <category term="Robotics" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      As a project to keep myself sane during the COVID lockdowns, I began looking into making a companion robot using Raspberry Pi, Arduino and 3D printing as a study in how to build a desktop companion robot. I wanted to make something that was fully autonomous and responded to the presense and interaction of people in the room. It also needed to be reasonably affordable (as much as robotics can be...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Maker Websites with GitHub Pages | Free Hosting</title>
+    <link href="http://localhost:4000/posts/github-pages/" rel="alternate" type="text/html" title="Maker Websites with GitHub Pages | Free Hosting" />
+    <published>2023-10-03T00:00:00+01:00</published>
+  
+    <updated>2023-10-03T00:00:00+01:00</updated>
+  
+    <id>http://localhost:4000/posts/github-pages/</id>
+    <content src="http://localhost:4000/posts/github-pages/" />
+    <author>
+      <name>Dan Makes Things</name>
+    </author>
+
+  
+    
+    <category term="Guides" />
+    
+    <category term="Website" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      As a maker that loves to show my projects to the world, one of the challenges I have always faced is understanding the best platform to do that.
+
+Many years ago I worked in web development. It was, by comparison, much less accessible. I’m pleased to say that things have improved, now affordable and maintainable hosting solutions are everywhere.
+
+Enter GitHub Pages.
+
+What is GitHub Pages?
+
+
+  No...
+    </summary>
+  
+
+  </entry>
 
 </feed>
 
