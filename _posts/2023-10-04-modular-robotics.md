@@ -42,9 +42,9 @@ We plan on sharing any relevant files to support these platforms so feel free to
 
 ## Contributions and Discussions
 
-We encourage active participation, contributions, and discussions from the Modular Biped Robot community. If you have any questions, ideas, suggestions, or would like to share your experiences, you can join our [GitHub Discussions](../discussions) section dedicated to the project. It's a great place to engage with other community members, exchange knowledge, and collaborate on the development of biped robotics.
+We encourage active participation, contributions, and discussions from the Modular Biped Robot community. If you have any questions, ideas, suggestions, or would like to share your experiences, you can join our [GitHub Discussions](https://github.com/dmt-labs/modular-biped/discussions) section dedicated to the project. It's a great place to engage with other community members, exchange knowledge, and collaborate on the development of biped robotics.
 
-Read more here: [Community](../discussions/17)
+Read more here: [Community](https://github.com/dmt-labs/modular-biped/discussions/17)
 
 We look forward to your participation and the exciting advancements we can achieve together in the field of modular biped robots!
 
