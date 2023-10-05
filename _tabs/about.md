@@ -4,8 +4,15 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-> This website is still under construction, but you're welcome to look around!
-{: .prompt-tip }
+A friend from the maker community suggested that I start a blog to document my projects and share my experiences. I thought it was a great idea, so here we are!
+
+This website will cover infromation about the various builds I have been working on and will include guides, tutorials, and other resources to help you get started with your own projects.
+
+The main project is the [Modular Robotics Framework](/modular-biped/) (which is probably why you're here), but this platform also gives me the opportunity to share other projects and ideas that I have been working on as well as work from other makers in the community.
+
+I hope you enjoy the content and find it useful. If you have any questions or suggestions, please feel free to get in touch.
+
+## About Maker Forge
 
 Welcome to Maker Forge, your ultimate destination for all things open source hobby robotics and DIY innovation! In an age where technology evolves at a rapid pace, enthusiasts and makers like you are constantly seeking new avenues to unleash your creativity and bring your robotic dreams to life. Maker Forge is here to empower you on that exciting journey.
 

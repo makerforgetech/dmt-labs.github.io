@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Maker Forge</title>
   <subtitle>Guides and news relating to Maker Forge projects and videos.</subtitle>
-  <updated>2023-10-04T13:51:34+01:00</updated>
+  <updated>2023-10-05T17:11:36+01:00</updated>
   <author>
     <name>Dan Makes Things</name>
     <uri>http://localhost:4000/</uri>
@@ -20,23 +20,25 @@
 
   
   <entry>
-    <title>Modular Robotics with Raspberry Pi and Python</title>
-    <link href="http://localhost:4000/posts/modular-robotics/" rel="alternate" type="text/html" title="Modular Robotics with Raspberry Pi and Python" />
-    <published>2023-10-03T00:00:00+01:00</published>
+    <title>Modular Biped Features | Build Log</title>
+    <link href="http://localhost:4000/posts/modular-biped-features/" rel="alternate" type="text/html" title="Modular Biped Features | Build Log" />
+    <published>2023-10-05T00:00:00+01:00</published>
   
-    <updated>2023-10-03T00:00:00+01:00</updated>
+    <updated>2023-10-05T00:00:00+01:00</updated>
   
-    <id>http://localhost:4000/posts/modular-robotics/</id>
-    <content src="http://localhost:4000/posts/modular-robotics/" />
+    <id>http://localhost:4000/posts/modular-biped-features/</id>
+    <content src="http://localhost:4000/posts/modular-biped-features/" />
     <author>
       <name>Dan Makes Things</name>
     </author>
 
   
     
-    <category term="Guides" />
-    
     <category term="Robotics" />
+    
+    <category term="Build Log" />
+    
+    <category term="Modular Robotics Framework" />
     
   
 
@@ -48,7 +50,11 @@
 
 
 
-      As a project to keep myself sane during the COVID lockdowns, I began looking into making a companion robot using Raspberry Pi, Arduino and 3D printing as a study in how to build a desktop companion robot. I wanted to make something that was fully autonomous and responded to the presense and interaction of people in the room. It also needed to be reasonably affordable (as much as robotics can be...
+      When I first started working on the modular biped project, I had a few features in mind. The way that the robot behaved would depend entirely on the sensors and actuators it had in it’s arsenal. For that reason (and because I enjoy trying new things!) I decided to add as many as reasonably possible, as long as they were relevant to the brief of a ‘desktop companion robot’.
+
+Sensing the world
+
+T...
     </summary>
   
 
@@ -94,6 +100,44 @@ What is GitHub Pages?
 
 
   No...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Modular Biped Intro &amp; History | YouTube</title>
+    <link href="http://localhost:4000/posts/modular-biped-intro-video/" rel="alternate" type="text/html" title="Modular Biped Intro &amp;amp; History | YouTube" />
+    <published>2023-08-15T00:00:00+01:00</published>
+  
+    <updated>2023-08-15T00:00:00+01:00</updated>
+  
+    <id>http://localhost:4000/posts/modular-biped-intro-video/</id>
+    <content src="http://localhost:4000/posts/modular-biped-intro-video/" />
+    <author>
+      <name>Dan Makes Things</name>
+    </author>
+
+  
+    
+    <category term="Robotics" />
+    
+    <category term="Modular Robotics Framework" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Since the creation of version 3 of the modular robotics framework, this video covers an overview of the project and the history of each version.
+
+The project has evolved over the last few years and a community has begun to grow around it. This led to a number of changes to allow the platform to be more modular, allowing any number of robots to be created using the software with reuse of any rel...
     </summary>
   
 

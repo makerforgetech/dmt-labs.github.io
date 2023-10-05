@@ -1,9 +1,7 @@
 ---
-title: Modular Robotics with Raspberry Pi and Python
-date: 2023-10-03
-categories: [Guides, Robotics]
-tags: [modular, robotics, framework]     # TAG names should always be lowercase
-image: /assets/img/posts/2023-10-04-modular-robotics/deck.png
+title: Modular Robotics Framework
+icon: fas fa-info-circle
+order: 0
 ---
 
 As a project to keep myself sane during the COVID lockdowns, I began looking into making a companion robot using Raspberry Pi, Arduino and 3D printing as a study in how to build a desktop companion robot. I wanted to make something that was fully autonomous and responded to the presense and interaction of people in the room. It also needed to be reasonably affordable (as much as robotics can be!) and accessible.
@@ -12,7 +10,7 @@ The project has evolved over the last few years and a community has begun to gro
 
 ## Overview
 
-![Full project (front view)](/assets/img/posts/2023-10-04-modular-robotics/full_project_front_thumb.jpg)
+![Full project (front view)](/assets/img/pages/modular-robotics/full_project_front_thumb.jpg)
 
 The Modular Biped Robot project is designed to provide a flexible and modular framework for robotics development using Python and C++ on the Raspberry Pi and Arduino platforms. It aims to enable developers, robotics enthusiasts, and curious individuals to experiment, create, and customize their own biped robots. With a range of features and functionalities and the option to add your own easily, the Modular Biped Robot Project offers an exciting opportunity to explore the world of robotics.
 
@@ -57,3 +55,5 @@ The wiki and files are available on the GitHub repository linked below:
 [Repository](https://github.com/dmt-labs/modular-biped)
 
 [Discussions](https://github.com/dmt-labs/modular-biped/discussions)
+
+[Read The Build Logs](/categories/modular-robotics-framework/)
