@@ -18,6 +18,23 @@
   },
   
   {
+    "title": "Disney Research Announcment | News",
+    "url": "/posts/disney-research/",
+    "categories": "News, Robotics",
+    "tags": "robotics, bd-1",
+    "date": "2023-10-05 00:00:00 +0100",
+    
+
+
+
+
+
+    
+    "snippet": "Disney Research has announced a new robot at IROS2023 that looks suspicously like the BD-1 robot from Star Wars Jedi: Fallen Order.This post from David Scaramuzza from the University of Zurich show...",
+    "content": "Disney Research has announced a new robot at IROS2023 that looks suspicously like the BD-1 robot from Star Wars Jedi: Fallen Order.This post from David Scaramuzza from the University of Zurich shows the robot in action.The movement is very organic, and the post explains that it has been trained in a simulator using reinforcement learning.It’s great to see this kind of research being done in the field of robotics, and I’m excited to see what comes next."
+  },
+  
+  {
     "title": "Maker Websites with GitHub Pages | Free Hosting",
     "url": "/posts/github-pages/",
     "categories": "Guides, Website",

@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Maker Forge</title>
   <subtitle>Guides and news relating to Maker Forge projects and videos.</subtitle>
-  <updated>2023-10-05T19:21:15+01:00</updated>
+  <updated>2023-10-05T20:18:49+01:00</updated>
   <author>
     <name>Dan Makes Things</name>
     <uri>http://localhost:4000/</uri>
@@ -55,6 +55,50 @@
 Sensing the world
 
 T...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Disney Research Announcment | News</title>
+    <link href="http://localhost:4000/posts/disney-research/" rel="alternate" type="text/html" title="Disney Research Announcment | News" />
+    <published>2023-10-05T00:00:00+01:00</published>
+  
+    <updated>2023-10-05T00:00:00+01:00</updated>
+  
+    <id>http://localhost:4000/posts/disney-research/</id>
+    <content src="http://localhost:4000/posts/disney-research/" />
+    <author>
+      <name>Dan Makes Things</name>
+    </author>
+
+  
+    
+    <category term="News" />
+    
+    <category term="Robotics" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Disney Research has announced a new robot at IROS2023 that looks suspicously like the BD-1 robot from Star Wars Jedi: Fallen Order.
+
+This post from David Scaramuzza from the University of Zurich shows the robot in action.
+
+
+
+The movement is very organic, and the post explains that it has been trained in a simulator using reinforcement learning.
+
+It’s great to see this kind of research being don...
     </summary>
   
 
