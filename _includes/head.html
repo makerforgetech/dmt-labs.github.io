@@ -80,6 +80,12 @@
       <link rel="stylesheet" href="{{ site.data.origin[type].toc.css | relative_url }}">
     {% endif %}
   
+    {% if page.layout == 'post' or page.layout == 'page' or page.layout == 'home' %}
+      <link rel="stylesheet" href="{{ site.data.origin[type]['lazy-polyfill'].css | relative_url }}">
+    {% endif %}
+  
+
+  
     <!-- JavaScript -->
   
     {% unless site.theme_mode %}
