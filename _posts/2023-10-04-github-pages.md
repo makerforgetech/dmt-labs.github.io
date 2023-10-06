@@ -37,6 +37,12 @@ You'll need to familiarise yourself with a few things to get this working. Don't
 
 If you're not familiar with using the command line (or terminal), you might want to take a look at a basic tutorial. That said, there is an app called GitHub Desktop that allows you to do most of this without using the command line, but I won't be covering that here. I'll leave it up to you to decide which you prefer.
 
+### Install Jekyll
+
+Jekyll is a static site generator that allows you to create dynamic websites using Markdown and Liquid templates. It's a great way to get started with a website and to get your projects out there. And best of all, you don't need to know anything about web development to get started.
+
+[Install Jekyll](https://jekyllrb.com/docs/installation/)
+
 ### Create a GitHub account
 
 The first thing you need to do is create a GitHub account. If you don't already have one, you can sign up for free at [GitHub.com](https://github.com).
@@ -99,6 +105,18 @@ You can build your website locally by running `bundle exec jekyll serve` from th
 
 You should see the changes you have made. If you don't, check the output from the command line to see if there are any errors.
 
+## Installing Google Analytics and Adsense
+
+If you're like me and want to know whether people are actually viewing your content, you can use Google Analytics to track visits to your site easily. Simply [sign up for an account](https://marketingplatform.google.com/intl/en_uk/about/analytics/) and then add the tracking identifier (`G-XXXXXXXX`) to the `_config.yml` file in your repository (next to `id:` under `google_analytics:`).
+
+For google adsense, it's a little more complicated:
+
+1. Create an [adsense account](https://www.google.com/adsense), add your site and copy the code required (It should look something like this `<script data-ad-client="ca-pub-XXXXX" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>`).
+1. Customise your adsense configuration to allow 'auto ads'. This will place ads on your site automatically where they are most likely to be seen.
+1. Create a folder `_includes` in your repository, then create an empty file `head.html`. If this already exists you can skip the next step.
+1. Navigate to the theme repo and copy the content of the file `head.html` into your new file ([example](https://github.com/cotes2020/jekyll-theme-chirpy/blob/master/_includes/head.html))
+1. In that file, before the line that reads `</head>` add the code copied from Google Adsense.
+
 ## What next?
 
 Now you have a website, you can start adding content. You can create new posts, pages, and tabs. You can also customise the theme and add your own images and files. To deploy the latest changes simply commit and push your changes to GitHub. The in-built github action will take care of the rest.
@@ -112,7 +130,7 @@ If you'd like to see a video explaining this process, take a look at this video 
 ### TD;LR?
 
 Just want to get on with it?
-Assuming you have git and github already configured, you can fork the repo then use these terminal commands to get your own website up and running in your own github pages repository.
+Assuming you have jekyll, git and github already configured, you can fork the repo then use these terminal commands to get your own website up and running in your own github pages repository.
 
 Sign in to GitHub and browse to [Chirpy Starter](https://github.com/cotes2020/chirpy-starter), click the button `Use this template > Create a new repository`, and name the new repository `username.github.io`, where `username` represents your GitHub username.
 
