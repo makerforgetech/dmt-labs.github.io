@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Maker Forge</title>
   <subtitle>Guides and news relating to Maker Forge projects and videos.</subtitle>
-  <updated>2023-10-06T13:36:13+01:00</updated>
+  <updated>2023-10-06T18:44:39+01:00</updated>
   <author>
     <name>Dan Makes Things</name>
     <uri>http://localhost:4000/</uri>
@@ -110,7 +110,7 @@ It’s great to see this kind of research being don...
     <link href="http://localhost:4000/posts/github-pages/" rel="alternate" type="text/html" title="Maker Websites with GitHub Pages | Free Hosting" />
     <published>2023-10-03T00:00:00+01:00</published>
   
-    <updated>2023-10-03T00:00:00+01:00</updated>
+    <updated>2023-10-06T18:42:40+01:00</updated>
   
     <id>http://localhost:4000/posts/github-pages/</id>
     <content src="http://localhost:4000/posts/github-pages/" />
