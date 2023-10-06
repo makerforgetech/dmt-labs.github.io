@@ -22,15 +22,15 @@
         {% assign img_path = page.img_path | append: '/' | append: img | replace: '//', '/' %}
         {% capture target %}"{{ img | absolute_url }}"{% endcapture %}
   
-        <!-- {% if site.img_cdn contains '//' %} -->
+        {% if site.img_cdn contains '//' %}
           <!-- it's a cross-origin URL -->
-          <!-- {% capture replacement %}"{{ site.img_cdn }}{{ img_path }}"{% endcapture %} -->
-        <!-- {% else %} -->
+          {% capture replacement %}"{{ site.img_cdn }}{{ img_path }}"{% endcapture %}
+        {% else %}
           <!-- it's a local file path -->
-          <!-- {%- capture replacement -%} -->
-            <!-- "{{ site.img_cdn | append: '/' | append: img_path | replace: '//', '/' | absolute_url }}" -->
-          <!-- {%- endcapture -%} -->
-        <!-- {% endif %} -->
+          {%- capture replacement -%}
+            "{{ site.img_cdn | append: '/' | append: img_path | replace: '//', '/' | absolute_url }}"
+          {%- endcapture -%}
+        {% endif %}
   
         {% assign seo_tags = seo_tags | replace: target, replacement %}
       {% endunless %}
@@ -48,37 +48,6 @@
     {% include_cached favicons.html %}
   
 
-  
-    <!-- GA -->
-    {% if jekyll.environment == 'production' and site.google_analytics.id != empty and site.google_analytics.id %}
-      <link rel="preconnect" href="https://www.google-analytics.com" crossorigin="use-credentials">
-      <link rel="dns-prefetch" href="https://www.google-analytics.com">
-  
-      <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin="anonymous">
-      <link rel="dns-prefetch" href="https://www.googletagmanager.com">
-    {% endif %}
-  
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="{{ site.data.origin[type].bootstrap.css | relative_url}}">
-  
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="{{ site.data.origin[type].fontawesome.css | relative_url }}">
-  
-    <link rel="stylesheet" href="{{ '/assets/css/:THEME.css' | replace: ':THEME', site.theme | relative_url }}">
-  
-    {% if site.toc and page.toc %}
-      <link rel="stylesheet" href="{{ site.data.origin[type].toc.css | relative_url }}">
-    {% endif %}
-  
-    {% if page.layout == 'post' or page.layout == 'page' or page.layout == 'home' %}
-      <link rel="stylesheet" href="{{ site.data.origin[type]['lazy-polyfill'].css | relative_url }}">
-    {% endif %}
-  
-    {% if page.layout == 'page' or page.layout == 'post' %}
-      <!-- Manific Popup -->
-      <link rel="stylesheet" href="{{ site.data.origin[type].magnific-popup.css | relative_url }}">
-    {% endif %}
-  
     <!-- JavaScript -->
   
     {% unless site.theme_mode %}
