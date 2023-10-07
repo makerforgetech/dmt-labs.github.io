@@ -12,6 +12,13 @@ The main project is the [Modular Robotics Framework](/modular-biped/) (which is 
 
 I hope you enjoy the content and find it useful. If you have any questions or suggestions, please feel free to get in touch.
 
+## Useful Links
+
+[Instagram](https://www.instagram.com/dan.makes.things/)
+[YouTube](https://www.youtube.com/DanMakesThings)
+[GitHub](https://github.com/dmt-labs)
+[Discussion Group](https://github.com/dmt-labs/modular-biped/discussions)
+
 ## About Maker Forge
 
 Welcome to Maker Forge, your ultimate destination for all things open source hobby robotics and DIY innovation! In an age where technology evolves at a rapid pace, enthusiasts and makers like you are constantly seeking new avenues to unleash your creativity and bring your robotic dreams to life. Maker Forge is here to empower you on that exciting journey.
