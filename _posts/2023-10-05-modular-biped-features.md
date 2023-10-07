@@ -16,7 +16,7 @@ To make the robot aware of it's surroundings, I added a number of sensors. These
 
 ![RCWL-0516 Microwave Sensor](/assets/img/posts/2023-10-05-modular-biped-features/rcwl-0516.png){: .w-50 .left} 
 
-This sensor has a digital output (true or false) and detects the presense of a human or animal within a few meters, even through walls. The sensor cannot be adjusted in sensitivity and so it was not useful to determine if a person was 'in front' of the robot, or even in the same room, but as a general 'someone is near by' detector it works well.
+This sensor has a digital output (true or false) and detects the presence of a human or animal within a few meters, even through walls. The sensor cannot be adjusted in sensitivity and so it was not useful to determine if a person was 'in front' of the robot, or even in the same room, but as a general 'someone is near by' detector it works well.
 
 Because the plan was to allow the robot to run autonomously and 24 hours a day, a sensor that detects people allows the robot to enter a power saving mode when no one is around. This is useful for a number of reasons, but primarily to reduce the power consumption and to reduce the wear on the servos.
 

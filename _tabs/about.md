@@ -15,8 +15,11 @@ I hope you enjoy the content and find it useful. If you have any questions or su
 ## Useful Links
 
 [Instagram](https://www.instagram.com/dan.makes.things/)
+
 [YouTube](https://www.youtube.com/DanMakesThings)
+
 [GitHub](https://github.com/dmt-labs)
+
 [Discussion Group](https://github.com/dmt-labs/modular-biped/discussions)
 
 ## About Maker Forge
