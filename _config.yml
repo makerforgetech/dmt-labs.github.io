@@ -26,7 +26,7 @@ description: >- # used by seo meta and the atom feed
   Guides and news relating to Maker Forge projects and videos.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: "https://dmt-labs.github.io"
+url: "https://www.makerforge.tech"
 
 github:
   username: dmt-labs # change to your github username
