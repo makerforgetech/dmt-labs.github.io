@@ -3,30 +3,22 @@
 - type: github
   icon: "fab fa-github"
 
+- type: youtube
+  icon: "fab fa-youtube"
+  url: https://youtube.com/DanMakesThings
+
 - type: instagram
   icon: "fab fa-instagram"
   url: https://instagram.com/dan.makes.things
 
-# - type: twitter
-#   icon: "fa-brands fa-x-twitter"
+- type: threads
+  icon: 'fab fa-threads' 
+  url:  'https://www.threads.net/@dan.makes.things' 
 
-# - type: email
-#   icon: "fas fa-envelope"
-#   noblank: true # open link in current tab
-
-- type: rss
-  icon: "fas fa-rss"
-  noblank: true
-# Uncomment and complete the url below to enable more contact options
-#
 # - type: mastodon
-#   icon: 'fab fa-mastodon'   # icons powered by <https://fontawesome.com/>
-#   url:  ''                  # Fill with your Mastodon account page, rel="me" will be applied for verification
-#
-# - type: linkedin
-#   icon: 'fab fa-linkedin'   # icons powered by <https://fontawesome.com/>
-#   url:  ''                  # Fill with your Linkedin homepage
-#
-# - type: stack-overflow
-#   icon: 'fab fa-stack-overflow'
-#   url:  ''                  # Fill with your stackoverflow homepage
+#   icon: 'fab fa-mastodon'
+#   url:  'https://cr8r.gg/@DanMakesThings'
+
+# - type: rss
+#   icon: "fas fa-rss"
+#   noblank: true
