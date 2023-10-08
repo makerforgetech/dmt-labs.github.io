@@ -15,10 +15,14 @@
   icon: 'fab fa-threads' 
   url:  'https://www.threads.net/@dan.makes.things' 
 
-# - type: mastodon
-#   icon: 'fab fa-mastodon'
-#   url:  'https://cr8r.gg/@DanMakesThings'
+- type: mastodon
+  icon: 'fab fa-mastodon'
+  url:  'https://cr8r.gg/@DanMakesThings'
 
-# - type: rss
-#   icon: "fas fa-rss"
-#   noblank: true
+- type: rss
+  icon: "fas fa-rss"
+  noblank: true
+
+- type: buy-me-a-coffee
+  icon: "fas fa-coffee"
+  url: https://www.buymeacoffee.com/makerforgetech

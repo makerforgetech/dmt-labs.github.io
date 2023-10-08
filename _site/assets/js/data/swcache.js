@@ -21,6 +21,8 @@ const resource = [
   
     '/about/',
   
+    '/support-the-project/',
+  
 
   /* --- Favicons & compressed JS --- */
   

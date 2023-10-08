@@ -16,7 +16,7 @@ The Raspberry Pi 5 was announced last month and offers a number of improvements 
 | Feature | Pi 5 | Pi 3B+ |
 | --- | --- | --- |
 | USB | 2x USB 3.0, 2x USB 2.0 | 4x USB 2.0 |
-| Camera | 2x MIPI CSI camera ports | 1x MIPI CSI camera port |
+| Camera | 2x CSI camera ports | 1x CSI camera port |
 | GPIO | 40-pin GPIO header | 40-pin GPIO header |
 | Power | USB-C, 5v 5A (Max) | Micro USB, 5.1v 3A (Max) |
 
@@ -44,7 +44,7 @@ One other consideration is that the Pi 5 requires a fan to keep it cool, which i
 
 ## Camera
 
-The Pi 5 has two MIPI CSI camera ports, which is a welcome addition as it allows for the use of two cameras for 3D imaging and localisation. This is something that I have been looking into for a while, but the Pi 3B+ only has one camera port which limits the options.
+The Pi 5 has two CSI camera ports, which is a welcome addition as it allows for the use of two cameras for 3D imaging and localisation. This is something that I have been looking into for a while, but the Pi 3B+ only has one camera port which limits the options.
 
 The use of a second USB camera has always been possible, but this is not ideal for this project where anything connected to the USB ports is highly visible. 
 
@@ -78,7 +78,7 @@ Removing the USB Accelerator would reduce the cost of the project and save power
 
 ## Conclusion
 
-The Raspberry Pi 5 is a welcome upgrade to the Pi 3B+ and offers a number of improvements that will benefit the Modular Biped project. The main benefits are the dual MIPI CSI camera ports, the increased CPU and RAM, and the power button.
+The Raspberry Pi 5 is a welcome upgrade to the Pi 3B+ and offers a number of improvements that will benefit the Modular Biped project. The main benefits are the dual CSI camera ports, the increased CPU and RAM, and the power button.
 
 For very little effort, the project could be upgraded to use the Pi 5 and this would allow for the use of two cameras for 3D imaging and localisation. The increased CPU and RAM may also allow for the removal of the Coral USB Accelerator, which would reduce the cost and power consumption of the project.
 
