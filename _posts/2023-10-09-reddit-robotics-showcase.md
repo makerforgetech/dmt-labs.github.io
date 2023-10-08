@@ -20,3 +20,5 @@ The showcase includes:
 - Session 4: Startups and Solutions
 
 The keynote for session 2 was Eliot Horowitz, CEO and Founder of VIAM. Eliot is also the founder of MongoDB, a database platform used by many companies around the world and joined the live stream to talk about how VIAM is helping to make robotics more accessible.
+
+You can see the original program [here](https://redditroboticsshowcase.wordpress.com/2023-program/) to see the full list of speakers and projects.
