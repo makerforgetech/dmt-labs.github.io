@@ -3,7 +3,7 @@ title: Reddit Robotics Showcase 2023
 date: 2023-10-09
 categories: [Robotics, News and Events]
 tags: [robotics, news, reddit]     # TAG names should always be lowercase
-image: /assets/img/posts/2023-10-08-reddit-robotics-showcase/preview.png
+image: /assets/img/posts/2023-10-09-reddit-robotics-showcase/preview.png
 ---
 
 Earlier in the year I was invited to speak about the Modular Robotics Framework on session 2 of the Reddit Robotics Showcase. This was a great opportunity to share the project with a wider audience and to talk about the history of the project and the future plans.
