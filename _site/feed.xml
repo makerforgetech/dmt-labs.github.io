@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Maker Forge</title>
   <subtitle>Guides and news relating to Maker Forge projects and videos.</subtitle>
-  <updated>2023-10-08T20:56:20+01:00</updated>
+  <updated>2023-10-11T19:26:48+01:00</updated>
   <author>
     <name>Dan Makes Things</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,93 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Using Raspberry Pi 5 with Modular Biped</title>
+    <link href="http://localhost:4000/posts/pi-5-deep-dive/" rel="alternate" type="text/html" title="Using Raspberry Pi 5 with Modular Biped" />
+    <published>2023-10-10T00:00:00+01:00</published>
+  
+    <updated>2023-10-08T20:21:59+01:00</updated>
+  
+    <id>http://localhost:4000/posts/pi-5-deep-dive/</id>
+    <content src="http://localhost:4000/posts/pi-5-deep-dive/" />
+    <author>
+      <name>Dan Makes Things</name>
+    </author>
+
+  
+    
+    <category term="Robotics" />
+    
+    <category term="Modular Robotics Framework" />
+    
+    <category term="News and Events" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Image credit: Raspberry Pi
+
+The Raspberry Pi 5 was announced last month and offers a number of improvements over the model currently used in the Modular Robotics Bipedal Robot project (The Pi 3B+). Let’s do a comparison to see what kind of features and issues we’d expect to see when using the new model.
+
+Raspberry Pi 5 vs Raspberry Pi 3B+ (Relevant Features)
+
+
+  
+    
+      Feature
+      Pi 5
+ ...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Reddit Robotics Showcase 2023</title>
+    <link href="http://localhost:4000/posts/reddit-robotics-showcase/" rel="alternate" type="text/html" title="Reddit Robotics Showcase 2023" />
+    <published>2023-10-09T00:00:00+01:00</published>
+  
+    <updated>2023-10-09T08:56:26+01:00</updated>
+  
+    <id>http://localhost:4000/posts/reddit-robotics-showcase/</id>
+    <content src="http://localhost:4000/posts/reddit-robotics-showcase/" />
+    <author>
+      <name>Dan Makes Things</name>
+    </author>
+
+  
+    
+    <category term="Robotics" />
+    
+    <category term="News and Events" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Earlier in the year I was invited to speak about the Modular Robotics Framework on session 2 of the Reddit Robotics Showcase. This was a great opportunity to share the project with a wider audience and to talk about the history of the project and the future plans.
+
+The playlist for the entire showcase is now available on YouTube and linked below. There were a lot of really interesting projects,...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -143,89 +230,6 @@ A more detailed article on IEEE Spectrum explains the research behind the robot 
 
 
 Disney’s history of animatronic characters dates b...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Maker Websites with GitHub Pages | Free Hosting</title>
-    <link href="http://localhost:4000/posts/github-pages/" rel="alternate" type="text/html" title="Maker Websites with GitHub Pages | Free Hosting" />
-    <published>2023-10-03T00:00:00+01:00</published>
-  
-    <updated>2023-10-06T18:42:40+01:00</updated>
-  
-    <id>http://localhost:4000/posts/github-pages/</id>
-    <content src="http://localhost:4000/posts/github-pages/" />
-    <author>
-      <name>Dan Makes Things</name>
-    </author>
-
-  
-    
-    <category term="Guides" />
-    
-    <category term="Website" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      As a maker that loves to show my projects to the world, one of the challenges I have always faced is understanding the best platform to do that.
-
-Many years ago I worked in web development. It was, by comparison, much less accessible. I’m pleased to say that things have improved, now affordable and maintainable hosting solutions are everywhere.
-
-Enter GitHub Pages.
-
-What is GitHub Pages?
-
-
-  No...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Modular Biped Intro &amp; History | YouTube</title>
-    <link href="http://localhost:4000/posts/modular-biped-intro-video/" rel="alternate" type="text/html" title="Modular Biped Intro &amp;amp; History | YouTube" />
-    <published>2023-08-15T00:00:00+01:00</published>
-  
-    <updated>2023-08-15T00:00:00+01:00</updated>
-  
-    <id>http://localhost:4000/posts/modular-biped-intro-video/</id>
-    <content src="http://localhost:4000/posts/modular-biped-intro-video/" />
-    <author>
-      <name>Dan Makes Things</name>
-    </author>
-
-  
-    
-    <category term="Robotics" />
-    
-    <category term="Modular Robotics Framework" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Since the creation of version 3 of the modular robotics framework, this video covers an overview of the project and the history of each version.
-
-The project has evolved over the last few years and a community has begun to grow around it. This led to a number of changes to allow the platform to be more modular, allowing any number of robots to be created using the software with reuse of any rel...
     </summary>
   
 

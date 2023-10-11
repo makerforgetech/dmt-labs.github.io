@@ -72,7 +72,7 @@ A recent edition is a speaker module that connects directly to the audio output 
 ![Speaker Module](/assets/img/posts/2023-10-05-modular-biped-features/speaker.png){: .w-25}
 _Image credit: [The Pi Hut](https://thepihut.com/products/adafruit-stemma-speaker-plug-and-play-audio-amplifier-ada3885?variant=30679065985086)_
 
-> Note: The Raspberry Pi 5 does not have an audio jack, but the same i2s connection that is used for the speakers may be compatible with an i2s speaker amplifier module. This will need investigation
+> Note: The Raspberry Pi 5 does not have an audio jack, but the same i2s connection that is used for the MEMS microphones may be compatible with an i2s speaker amplifier module. This will need investigation
 {: .prompt-warning }
 
 ### Buzzer

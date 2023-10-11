@@ -1,0 +1,43 @@
+---
+title: Introducing Unihiker from RFRobot | Unboxing
+date: 2024-10-8
+categories: [Robotics, Unihiker, Unboxing]
+tags: [robotics, news, single-board-computer]     # TAG names should always be lowercase
+image: https://dfimg.dfrobot.com/64228321aa9508d63a42c28b/wiki/9924dc25f8a8d36cae2ea2becac95b77.png
+
+---
+_Image credit: [DFRobot](https://www.unihiker.com/wiki/introduction)_
+
+# Summary
+
+The Unihiker is a new single-board computer from RFRobot. It offers a number of features that make it a great choice for robotics projects, including a 2.8-inch touchscreen display, Wi-Fi and Bluetooth. It is equipped with light sensor, accelerometer, gyroscope and microphone. With built-in co-processor, it is able to communicate with various analog/digital/I2C/UART/SPI sensors and actuators.
+
+DFRobot have kindly sent a Unihiker to the Maker Forge for testing and review. This article will cover the unboxing and initial impressions of the device.
+
+# Features
+
+- 2.8-inch touchscreen
+- Easy setup via Type-C cable and programming through a browser
+- Rich interfaces for controlling open-source hardware
+- Direct control of hundreds of sensors and actuators using Python
+- Integrated local IoT services that can stores data locally
+- Built-in Wi-Fi and Bluetooth for wireless connectivity
+- Supports popular coding software like Jupyter notebook, VS Code, VIM, Mind+
+
+See the full specification here: [Unihiker Specification](https://www.unihiker.com/wiki/specification)
+
+# Form factor
+
+The Unihiker is a small device comparable in size to the Raspberry Pi and other single board computers (SBCs), however the layout is entirely different.
+
+![Unihiker](https://dfimg.dfrobot.com/64228321aa9508d63a42c28b/wiki/9093b27717d6a448aa0fed0c2e68fd23.png)
+_Image credit: [DFRobot](https://www.unihiker.com/wiki/board-overview)_
+
+It has a 2.8-inch touchscreen display and a number of ports for connecting sensors and actuators. The 40 pin GPIO is instead a selection of 3 pin or 4 pin JST(?) connectors with various functions. There is also an edge connector.
+
+# Unboxing
+
+
+
+
+

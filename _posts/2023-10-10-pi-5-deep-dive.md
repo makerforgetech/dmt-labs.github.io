@@ -76,6 +76,14 @@ Removing the USB Accelerator would reduce the cost of the project and save power
 
 **Outcome:** The Pi 5 may be able to perform the object detection and recognition in realtime without the need for the Coral USB Accelerator.
 
+## Audio Jack
+
+The Raspberry Pi 5 does not have an audio jack, and the current project uses a speaker module that relies on this jack for output.
+
+However, the same i2s connection that is used for the MEMS microphones may be compatible with an i2s speaker amplifier module. This will need investigation.
+
+**Outcome:** Investigate i2s speaker amplifier module to replace the current module.
+
 ## Conclusion
 
 The Raspberry Pi 5 is a welcome upgrade to the Pi 3B+ and offers a number of improvements that will benefit the Modular Biped project. The main benefits are the dual CSI camera ports, the increased CPU and RAM, and the power button.
