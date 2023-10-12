@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Maker Forge</title>
   <subtitle>Guides and news relating to Maker Forge projects and videos.</subtitle>
-  <updated>2023-10-11T19:26:48+01:00</updated>
+  <updated>2023-10-12T21:16:46+01:00</updated>
   <author>
     <name>Dan Makes Things</name>
     <uri>http://localhost:4000/</uri>
@@ -24,7 +24,7 @@
     <link href="http://localhost:4000/posts/pi-5-deep-dive/" rel="alternate" type="text/html" title="Using Raspberry Pi 5 with Modular Biped" />
     <published>2023-10-10T00:00:00+01:00</published>
   
-    <updated>2023-10-08T20:21:59+01:00</updated>
+    <updated>2023-10-11T19:27:23+01:00</updated>
   
     <id>http://localhost:4000/posts/pi-5-deep-dive/</id>
     <content src="http://localhost:4000/posts/pi-5-deep-dive/" />
@@ -50,9 +50,9 @@
 
 
 
-      Image credit: Raspberry Pi
+      The Raspberry Pi 5 was announced last month and offers a number of improvements over the model currently used in the Modular Robotics Bipedal Robot project (The Pi 3B+). Let’s do a comparison to see what kind of features and issues we’d expect to see when using the new model.
 
-The Raspberry Pi 5 was announced last month and offers a number of improvements over the model currently used in the Modular Robotics Bipedal Robot project (The Pi 3B+). Let’s do a comparison to see what kind of features and issues we’d expect to see when using the new model.
+Image credit: Raspberry Pi
 
 Raspberry Pi 5 vs Raspberry Pi 3B+ (Relevant Features)
 
@@ -153,7 +153,7 @@ You can read the article here: Build a bipedal companion robot - ...
     <link href="http://localhost:4000/posts/modular-biped-features/" rel="alternate" type="text/html" title="Modular Biped Features | Build Log" />
     <published>2023-10-05T00:00:00+01:00</published>
   
-    <updated>2023-10-07T21:19:43+01:00</updated>
+    <updated>2023-10-11T19:27:23+01:00</updated>
   
     <id>http://localhost:4000/posts/modular-biped-features/</id>
     <content src="http://localhost:4000/posts/modular-biped-features/" />
@@ -195,7 +195,7 @@ T...
     <link href="http://localhost:4000/posts/disney-research/" rel="alternate" type="text/html" title="Disney Research Announcment | News" />
     <published>2023-10-05T00:00:00+01:00</published>
   
-    <updated>2023-10-08T09:16:49+01:00</updated>
+    <updated>2023-10-11T19:27:23+01:00</updated>
   
     <id>http://localhost:4000/posts/disney-research/</id>
     <content src="http://localhost:4000/posts/disney-research/" />

@@ -61,7 +61,7 @@ Disney's approach is hardware-agnostic, meaning it can be adapted for robots wit
 Disney's research team is eager to push the boundaries of what's possible in robotics. While specific details about their future projects remain undisclosed, Disney Research's journey with this innovative robot is an indicator of the exciting possibilities that lie ahead in the field.
 
 ## More references
-[Popular Science](https://www.popsci.com/technology/disney-robot-cute-animation/)
-[The Verge](https://www.theverge.com/2023/10/10/23911040/disney-imagineering-robot-bipedal-balance-free-walking-concept)
-[IEEE Spectrum](https://spectrum.ieee.org/disney-robot)
-[Medium](https://medium.com/aimonks/disney-research-unveils-a-remarkably-expressive-robot-at-iros-2023-69ec0d9246c8)
+- [Popular Science](https://www.popsci.com/technology/disney-robot-cute-animation/)
+- [The Verge](https://www.theverge.com/2023/10/10/23911040/disney-imagineering-robot-bipedal-balance-free-walking-concept)
+- [IEEE Spectrum](https://spectrum.ieee.org/disney-robot)
+- [Medium](https://medium.com/aimonks/disney-research-unveils-a-remarkably-expressive-robot-at-iros-2023-69ec0d9246c8)

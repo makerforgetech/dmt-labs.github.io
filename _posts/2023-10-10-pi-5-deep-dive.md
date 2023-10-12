@@ -6,10 +6,11 @@ tags: [robotics, news, raspberry-pi-5]     # TAG names should always be lowercas
 image: https://www.raspberrypi.com/app/uploads/2023/09/aa7841cb-421a-4000-8ab9-c77478a4f83b-2048x1365.jpg
 
 ---
-_Image credit: [Raspberry Pi](https://www.raspberrypi.com/news/introducing-raspberry-pi-5/)_
-
 
 The Raspberry Pi 5 was announced last month and offers a number of improvements over the model currently used in the Modular Robotics Bipedal Robot project (The Pi 3B+). Let's do a comparison to see what kind of features and issues we'd expect to see when using the new model.
+
+_Image credit: [Raspberry Pi](https://www.raspberrypi.com/news/introducing-raspberry-pi-5/)_
+
 
 ## Raspberry Pi 5 vs Raspberry Pi 3B+ (Relevant Features)
 
