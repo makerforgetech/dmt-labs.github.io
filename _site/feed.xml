@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Maker Forge</title>
   <subtitle>Guides and news relating to Maker Forge projects and videos.</subtitle>
-  <updated>2023-10-12T21:16:46+01:00</updated>
+  <updated>2023-10-16T20:37:51+01:00</updated>
   <author>
     <name>Dan Makes Things</name>
     <uri>http://localhost:4000/</uri>
@@ -20,11 +20,59 @@
 
   
   <entry>
+    <title>Let's Learn About Walking Robots</title>
+    <link href="http://localhost:4000/posts/walking-case-studies/" rel="alternate" type="text/html" title="Let&amp;apos;s Learn About Walking Robots" />
+    <published>2023-10-14T00:00:00+01:00</published>
+  
+    <updated>2023-10-14T00:00:00+01:00</updated>
+  
+    <id>http://localhost:4000/posts/walking-case-studies/</id>
+    <content src="http://localhost:4000/posts/walking-case-studies/" />
+    <author>
+      <name>Dan Makes Things</name>
+    </author>
+
+  
+    
+    <category term="Robotics" />
+    
+    <category term="Modular Robotics Framework" />
+    
+    <category term="Build Log" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      The biggest question I get asked when showing my bipedal robot to people is is “Does it walk?”.
+
+The answer is ‘no’, or rather, ‘not yet’.
+
+In order to understand the problem, we need to understand the basics of walking robots and the challenges that they face. This post will talk about a few examples available today.
+
+Image credit: MathWorks
+
+A word on actuators
+
+When we talk about actuators, ...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
     <title>Using Raspberry Pi 5 with Modular Biped</title>
     <link href="http://localhost:4000/posts/pi-5-deep-dive/" rel="alternate" type="text/html" title="Using Raspberry Pi 5 with Modular Biped" />
     <published>2023-10-10T00:00:00+01:00</published>
   
-    <updated>2023-10-11T19:27:23+01:00</updated>
+    <updated>2023-10-12T21:17:42+01:00</updated>
   
     <id>http://localhost:4000/posts/pi-5-deep-dive/</id>
     <content src="http://localhost:4000/posts/pi-5-deep-dive/" />
@@ -184,52 +232,6 @@ You can read the article here: Build a bipedal companion robot - ...
 Sensing the world
 
 T...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Disney Research Announcment | News</title>
-    <link href="http://localhost:4000/posts/disney-research/" rel="alternate" type="text/html" title="Disney Research Announcment | News" />
-    <published>2023-10-05T00:00:00+01:00</published>
-  
-    <updated>2023-10-11T19:27:23+01:00</updated>
-  
-    <id>http://localhost:4000/posts/disney-research/</id>
-    <content src="http://localhost:4000/posts/disney-research/" />
-    <author>
-      <name>Dan Makes Things</name>
-    </author>
-
-  
-    
-    <category term="News" />
-    
-    <category term="Robotics" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Disney Research has announced a new robot at IROS2023 that looks suspiciously like the BD-1 robot from Star Wars Jedi: Fallen Order.
-
-This post from David Scaramuzza from the University of Zurich shows the robot in action.
-
-
-
-A more detailed article on IEEE Spectrum explains the research behind the robot and the technology used to create it.
-
-
-
-Disney’s history of animatronic characters dates b...
     </summary>
   
 
