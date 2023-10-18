@@ -36,28 +36,42 @@
     
   
     
+      
+  
+      
+        
+        
+  
+        
+          <!-- it's a local file path -->
+  
+        
+      
+    
   
     
       <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.2" />
-<meta property="og:title" content="Modular Robotics Framework" />
+<meta property="og:title" content="Teaching A Robot To Walk - Part One" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="As a project to keep myself sane during the COVID lockdowns, I began looking into making a companion robot using Raspberry Pi, Arduino and 3D printing as a study in how to build a desktop companion robot. I wanted to make something that was fully autonomous and responded to the presense and interaction of people in the room. It also needed to be reasonably affordable (as much as robotics can be!) and accessible." />
-<meta property="og:description" content="As a project to keep myself sane during the COVID lockdowns, I began looking into making a companion robot using Raspberry Pi, Arduino and 3D printing as a study in how to build a desktop companion robot. I wanted to make something that was fully autonomous and responded to the presense and interaction of people in the room. It also needed to be reasonably affordable (as much as robotics can be!) and accessible." />
-<link rel="canonical" href="http://localhost:4000/modular-biped/" />
-<meta property="og:url" content="http://localhost:4000/modular-biped/" />
+<meta name="description" content="Following on from my recent post discussing examples of walking robots, it became clear that a logical next step would be to look at how we can teach a robot to walk using simulators and reinforcement learning." />
+<meta property="og:description" content="Following on from my recent post discussing examples of walking robots, it became clear that a logical next step would be to look at how we can teach a robot to walk using simulators and reinforcement learning." />
+<link rel="canonical" href="http://localhost:4000/posts/reinforcement-learning-intro/" />
+<meta property="og:url" content="http://localhost:4000/posts/reinforcement-learning-intro/" />
 <meta property="og:site_name" content="Maker Forge" />
+<meta property="og:image" content="http://localhost:4000/assets/img/posts/2023-10-18-reinforcement-learning-intro/thumbnail.png" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2023-10-18T07:19:33+01:00" />
-<meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Modular Robotics Framework" />
+<meta property="article:published_time" content="2023-10-18T00:00:00+01:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="http://localhost:4000/assets/img/posts/2023-10-18-reinforcement-learning-intro/thumbnail.png" />
+<meta property="twitter:title" content="Teaching A Robot To Walk - Part One" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-10-18T07:19:33+01:00","datePublished":"2023-10-18T07:19:33+01:00","description":"As a project to keep myself sane during the COVID lockdowns, I began looking into making a companion robot using Raspberry Pi, Arduino and 3D printing as a study in how to build a desktop companion robot. I wanted to make something that was fully autonomous and responded to the presense and interaction of people in the room. It also needed to be reasonably affordable (as much as robotics can be!) and accessible.","headline":"Modular Robotics Framework","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/modular-biped/"},"url":"http://localhost:4000/modular-biped/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-10-18T00:00:00+01:00","datePublished":"2023-10-18T00:00:00+01:00","description":"Following on from my recent post discussing examples of walking robots, it became clear that a logical next step would be to look at how we can teach a robot to walk using simulators and reinforcement learning.","headline":"Teaching A Robot To Walk - Part One","image":"http://localhost:4000/assets/img/posts/2023-10-18-reinforcement-learning-intro/thumbnail.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/reinforcement-learning-intro/"},"url":"http://localhost:4000/posts/reinforcement-learning-intro/"}</script>
 <!-- End Jekyll SEO tag -->
 
     
   
-    <title>Modular Robotics Framework | Maker Forge
+    <title>Teaching A Robot To Walk - Part One | Maker Forge
     </title>
   
     <!--
@@ -108,6 +122,8 @@
   
     <link rel="stylesheet" href="/assets/css/jekyll-theme-chirpy.css">
   
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.21.1/dist/tocbot.min.css">
     
 <!--   
     
@@ -306,7 +322,7 @@
       </li>
       <!-- the real tabs -->
       
-        <li class="nav-item active">
+        <li class="nav-item">
           <a href="/modular-biped/" class="nav-link">
             <i class="fa-fw fas fa-info-circle"></i>
             
@@ -567,8 +583,10 @@
           
         
           
+        
+          
             
-              <span>Modular Robotics Framework</span>
+              <span>Teaching A Robot To Walk - Part One</span>
             
 
           
@@ -582,7 +600,7 @@
     </button>
 
     <div id="topbar-title">
-      Modular Robotics Framework
+      Post
     </div>
 
     <button type="button" id="search-trigger" class="btn btn-link">
@@ -608,19 +626,13 @@
         <div class="row">
           <main
             aria-label="Main Content"
-            class="col-12 col-lg-11 col-xl-9 px-md-4 pb-5"
+            class="col-12 col-lg-11 col-xl-9 px-md-4"
           >
             
 
 <article class="px-1">
   
     
-    
-    <h1 class="dynamic-title">
-      Modular Robotics Framework
-    </h1>
-    <div class="content">
-      
   
     <!-- Refactor the HTML structure -->
 
@@ -676,6 +688,109 @@
     
     
 
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+
+    
+
+    
+
+    <!-- lazy-load images <https://github.com/aFarkas/lazysizes#readme> -->
+    
+    
+
+    <!-- add image placeholder -->
+    
+      
+        <!-- add SVG placehoder -->
+        
+      
+    
+
+    <!-- Bypass the HTML-proofer test -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+      
+    
+
+    <!-- combine -->
+    
+
+  
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
     
       
 
@@ -827,6 +942,18 @@
       
 
     
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
 
     
 
@@ -834,6 +961,53 @@
 
   
   
+
+  
+    
+    
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+
+    
 
   
 
@@ -851,64 +1025,330 @@
 
 
 <!-- return -->
-<p>As a project to keep myself sane during the COVID lockdowns, I began looking into making a companion robot using Raspberry Pi, Arduino and 3D printing as a study in how to build a desktop companion robot. I wanted to make something that was fully autonomous and responded to the presense and interaction of people in the room. It also needed to be reasonably affordable (as much as robotics can be!) and accessible.</p>
 
-<p>The project has evolved over the last few years and a community has begun to grow around it. This led to a number of changes to allow the platform to be more modular, allowing any number of robots to be created using the software with reuse of any relevant hardware components and modules.</p>
 
-<h2 id="overview"><span class="me-2">Overview</span><a href="#overview" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-<p><a href="/assets/img/pages/modular-robotics/full_project_front_thumb.jpg" class="popup img-link "><img data-src="/assets/img/pages/modular-robotics/full_project_front_thumb.jpg" alt="Full project (front view)" class="lazyload" data-proofer-ignore></a></p>
 
-<p>The Modular Biped Robot project is designed to provide a flexible and modular framework for robotics development using Python and C++ on the Raspberry Pi and Arduino platforms. It aims to enable developers, robotics enthusiasts, and curious individuals to experiment, create, and customize their own biped robots. With a range of features and functionalities and the option to add your own easily, the Modular Biped Robot Project offers an exciting opportunity to explore the world of robotics.</p>
+<header>
+  <h1 data-toc-skip>Teaching A Robot To Walk - Part One</h1>
 
-<h2 id="modularity"><span class="me-2">Modularity</span><a href="#modularity" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+  <div class="post-meta text-muted">
+    <!-- published date -->
+    <span>
+      Posted
+      <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
 
-<p>The project is designed to be modular, meaning any components that are not required for the implementation can be removed and the functionality can be disabled by removing the initialisation in the <code class="language-plaintext highlighter-rouge">main.py</code> python file. Similarly, new modules can be integrated as easily by following the guide below.</p>
 
-<p><a href="https://github.com/dmt-labs/modular-biped/wiki/Software:-Modules">Modules</a></p>
 
-<p><a href="https://github.com/dmt-labs/modular-biped/wiki/Software:-Creating-a-module">Creating a Module</a></p>
 
-<h2 id="versioning"><span class="me-2">Versioning</span><a href="#versioning" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<time
+  
+  data-ts="1697583600"
+  data-df="ll"
+  
+    data-bs-toggle="tooltip" data-bs-placement="bottom"
+  
+>
+  Oct 18, 2023
+</time>
 
-<p>There have been 3 versions of this project, version 2 was the smaller and less stable build detailed in the playlist below.</p>
+    </span>
 
-<p><a href="https://youtu.be/Nqp4vuDWgpw?si=W-4mwJQCqWwtEBne">Watch the introduction on YouTube</a></p>
+    <!-- lastmod date -->
+    
 
-<p><a href="https://www.youtube.com/watch?v=2DVJ5xxAuWY&amp;list=PL_ua9QbuRTv6Kh8hiEXXVqywS8pklZraT">Companion Robot v2 Playlist</a></p>
+    
+      
+      
+      
 
-<p>The current development is ongoing on version 3. This documentation is exclusively for version 3.</p>
+      
 
-<h2 id="platforms"><span class="me-2">Platforms</span><a href="#platforms" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+      <div class="mt-3 mb-3">
+        <a href="/assets/img/posts/2023-10-18-reinforcement-learning-intro/thumbnail.png" class="popup img-link preview-img shimmer"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 630'%3E%3C/svg%3E" data-src="/assets/img/posts/2023-10-18-reinforcement-learning-intro/thumbnail.png"  alt="Preview Image" width="1200" height="630"  class="lazyload" data-proofer-ignore></a></div>
+    
 
-<p>Although the project was built on the Raspberry Pi 3B+ and Arduino Pro Mini, community members are working on the integration of other platforms such as the Jetson Nano, Raspberry Pi 4 &amp; 5, Arduin Nano and the DFRobot UniHiker SBC.</p>
+    <div class="d-flex justify-content-between">
+      <!-- author(s) -->
+      <span>
+        
 
-<p>We plan on sharing any relevant files to support these platforms so feel free to join the community and share your experience / requirments.</p>
+        By
 
-<h2 id="contributions-and-discussions"><span class="me-2">Contributions and Discussions</span><a href="#contributions-and-discussions" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+        <em>
+          
+            <a href="https://instagram.com/dan.makes.things">Dan Makes Things</a>
+          
+        </em>
+      </span>
 
-<p>We encourage active participation, contributions, and discussions from the Modular Biped Robot community. If you have any questions, ideas, suggestions, or would like to share your experiences, you can join our <a href="https://github.com/dmt-labs/modular-biped/discussions">GitHub Discussions</a> section dedicated to the project. It’s a great place to engage with other community members, exchange knowledge, and collaborate on the development of biped robotics.</p>
+      <!-- read time -->
+      <!-- Calculate the post's reading time, and display the word count in tooltip -->
 
-<p>Read more here: <a href="https://github.com/dmt-labs/modular-biped/discussions/17">Community</a></p>
 
-<p>We look forward to your participation and the exciting advancements we can achieve together in the field of modular biped robots!</p>
 
-<h2 id="get-started"><span class="me-2">Get Started</span><a href="#get-started" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<!-- words per minute -->
 
-<p>The wiki and files are available on the GitHub repository linked below:</p>
 
-<p><a href="https://github.com/dmt-labs/modular-biped/wiki">Modular Biped Wiki</a></p>
 
-<p><a href="https://github.com/dmt-labs/modular-biped">Repository</a></p>
 
-<p><a href="https://github.com/dmt-labs/modular-biped/discussions">Discussions</a></p>
 
-<p><a href="/categories/modular-robotics-framework/">Read The Build Logs</a></p>
+
+
+
+
+
+<!-- return element -->
+<span
+  class="readtime"
+  data-bs-toggle="tooltip"
+  data-bs-placement="bottom"
+  title="965 words"
+>
+  <em>5 min</em> read</span>
+
+    </div>
+    <!-- .d-flex -->
+  </div>
+  <!-- .post-meta -->
+</header>
+
+<div class="content">
+  <p>Following on from my recent post discussing examples of walking robots, it became clear that a logical next step would be to look at how we can teach a robot to walk using simulators and reinforcement learning.</p>
+
+<p>Let’s take a look at these concepts and how they can be applied to the Modular Biped project.</p>
+
+<h2 id="what-is-a-simulator"><span class="me-2">What is a simulator?</span><a href="#what-is-a-simulator" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>A simulator is a piece of software that allows us to create a virtual environment that we can use to test our robot. This is useful for a number of reasons:</p>
+<ul>
+  <li>We can test our robot without having to build it</li>
+  <li>We can test our robot without having to worry about breaking it</li>
+  <li>We can test our robot in a variety of environments</li>
+  <li>We can test our robot in a variety of scenarios</li>
+  <li>We can run thousands of tests in a short period of time</li>
+</ul>
+
+<p>This last point is particularly important when we are using reinforcement learning. We need to be able to run many tests in order to train our robot to walk. This would be very difficult to do in the real world, but in a simulator we can do this as long as we have the processing resources available.</p>
+
+<h2 id="what-is-reinforcement-learning"><span class="me-2">What is reinforcement learning?</span><a href="#what-is-reinforcement-learning" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>Reinforcement learning is a type of machine learning that uses a reward system to train a model. The model is given a goal and then rewarded for achieving that goal. The model is then able to learn how to achieve the goal by trying different actions and observing the results.</p>
+
+<p>In the case of a walking robot, the goal would be to move from one location to another. The model would be rewarded for moving towards the goal and penalised for moving away from the goal. This would allow the model to learn how to move towards the goal.</p>
+
+<p>It is also possible to reward or penalise the model for other actions, such as using too much energy to walk, or changes in direction of servos. This allows us to train the model to walk in a way that is efficient and smooth.</p>
+
+<h2 id="how-can-we-use-these-concepts-in-the-modular-biped-project"><span class="me-2">How can we use these concepts in the Modular Biped project?</span><a href="#how-can-we-use-these-concepts-in-the-modular-biped-project" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>The Modular Biped project is a great candidate for this type of learning as it is a complex task that is difficult to program manually. It is also a task that is difficult to test in the real world as it requires a lot of time and resources to build and test.</p>
+
+<p>The current structure of the robot does not allow for lateral hip actuation (although there are joints in the hips) and so we will need to add this functionality in order to allow the robot to walk. Rather than building the hardware to test, we can assemble it virtually in a simulator and then test it in a virtual environment. This allows us to iterate the design much more quickly than in the real world.</p>
+
+<h2 id="how-do-we-create-a-simulator"><span class="me-2">How do we create a simulator?</span><a href="#how-do-we-create-a-simulator" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>Fortunately for us, there are a number of simulators already available, either free or for a fee. These include:</p>
+<ul>
+  <li><a href="http://gazebosim.org/">Gazebo</a></li>
+  <li><a href="https://cyberbotics.com/">Webots</a></li>
+  <li><a href="http://www.coppeliarobotics.com/">V-REP</a></li>
+  <li><a href="https://unity.com/">Unity</a></li>
+  <li><a href="https://www.unrealengine.com/en-US/">Unreal Engine</a></li>
+  <li><a href="https://pybullet.org/wordpress/">PyBullet</a></li>
+  <li><a href="http://www.mujoco.org/">Mujoco</a></li>
+  <li><a href="https://gym.openai.com/">OpenAI Gym</a></li>
+</ul>
+
+<p>Because I have no idea what I’m doing, and because I have a guide for Mujoco, I will be using that as an example. However, the concepts are similar for all of the simulators listed above.</p>
+
+<h2 id="what-is-mujoco"><span class="me-2">What is Mujoco?</span><a href="#what-is-mujoco" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>Mujoco is a physics engine that allows us to create a virtual environment and simulate the physics of that environment. We can use it to define the structure of our robot and the properties of the materials that it is made from. We can also define the properties of the environment, such as gravity and friction.</p>
+
+<h2 id="lets-get-started"><span class="me-2">Let’s get started</span><a href="#lets-get-started" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p>For this quick example I’ll be using the repository from GitHub user @sergiynesterenko90</p>
+
+<p><a href="https://github.com/sergiynesterenko90/feranec">View Original Repository</a></p>
+
+<p><a href="https://github.com/dmt-labs/reinforcement-learning-brax">Maker Forge fork</a></p>
+
+<p>It utilises Google Colaboratory (colab) workspaces to run the simulations. This is a great way to get started as it allows us to run the simulations without having to install anything locally. It also allows us to use the free GPU resources provided by Google to speed up the training process.</p>
+
+<h3 id="step-1---create-a-google-colab-workspace"><span class="me-2">Step 1 - Create a Google Colab workspace</span><a href="#step-1---create-a-google-colab-workspace" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<p>Open the URL above and navigate to the <code class="language-plaintext highlighter-rouge">notebooks</code> folder, then open the <code class="language-plaintext highlighter-rouge">brax.ipynb</code> notebook.</p>
+
+<p>At the top of this notebook you will see a button that says ‘Open in Colab’. Click this button to open the notebook in a new tab.</p>
+
+<h3 id="step-2---run-the-notebook"><span class="me-2">Step 2 - Run the notebook</span><a href="#step-2---run-the-notebook" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
+<p>You will see a list of steps in the notebook. These are the steps that we will follow to train our robot to walk. Each must be executed sequentially in order to train the robot.</p>
+
+<ol>
+  <li>Import dependencies</li>
+  <li>Load environment</li>
+  <li>Training</li>
+  <li>Saving and Loading policies</li>
+  <li>Visualizing a trajectory of the learned inference function</li>
+</ol>
+
+<p>When training the model you should see a chart detailing the reward per episode and number of environment steps. This shows the progress of the training process.</p>
+
+<p><a href="/assets/img/posts/2023-10-18-reinforcement-learning-intro/chart.png" class="popup img-link w-50"><img data-src="/assets/img/posts/2023-10-18-reinforcement-learning-intro/chart.png" alt="Training"  class="lazyload" data-proofer-ignore></a></p>
+
+<p>After visualising the trajectory you should see the outcome of the reinforcement learning process. This is the robot learning how to walk.</p>
+
+<iframe class="embed-video youtube lazyload" src="https://www.youtube.com/embed/nfVA1f-yy0M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<h3 id="learn-more"><span class="me-2">Learn More</span><a href="#learn-more" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
+<p>The YouTube video below shows the process in a lot more detail, explaining the use of all the notebooks detailed in this repository. It’s a long watch but worth it for the additional information and context.</p>
+
+<iframe class="embed-video youtube lazyload" src="https://www.youtube.com/embed/FHptQbPoMvs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<h2 id="what-now"><span class="me-2">What now?</span><a href="#what-now" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>This is a great first step, but to continue development on your own you will need to model your own robot. This is where the Mujoco documentation comes in handy. You can find it here:</p>
+
+<p><a href="https://mujoco.readthedocs.io/en/stable/overview.html">MuJoCo Documentation</a></p>
+
+<p>In the next part of this series I will be using this documentation to create a model of the Modular Biped robot and then (hopefully) train it to walk. If you’d like to help out please get in touch on the <a href="https://bit.ly/maker-forge-community">community</a></p>
+
+</div>
+
+<div class="post-tail-wrapper text-muted">
+  <!-- categories -->
+  
+    <div class="post-meta mb-3">
+      <i class="far fa-folder-open fa-fw me-1"></i>
+      
+        <a href="/categories/robotics/">Robotics</a>,
+        <a href="/categories/guides/">Guides</a>,
+        <a href="/categories/reinforcement-learning/">Reinforcement Learning</a>,
+        <a href="/categories/simulation/">Simulation</a>
+    </div>
+  
+
+  <!-- tags -->
+  
+    <div class="post-tags">
+      <i class="fa fa-tags fa-fw me-1"></i>
+      
+        <a
+          href="/tags/robotics/"
+          class="post-tag no-text-decoration"
+        >robotics</a>
+      
+        <a
+          href="/tags/walking/"
+          class="post-tag no-text-decoration"
+        >walking</a>
+      
+        <a
+          href="/tags/biped/"
+          class="post-tag no-text-decoration"
+        >biped</a>
+      
+        <a
+          href="/tags/reinforcement-learning/"
+          class="post-tag no-text-decoration"
+        >reinforcement-learning</a>
+      
+    </div>
+  
+
+  <div
+    class="
+      post-tail-bottom
+      d-flex justify-content-between align-items-center mt-5 pb-2
+    "
+  >
+    <div class="license-wrapper">
+      
+        
+
+        This post is licensed under 
+        <a href="https://creativecommons.org/licenses/by/4.0/">
+          CC BY 4.0
+        </a>
+         by the author.
+      
+    </div>
+
+    <!-- Post sharing snippet -->
+
+<div class="share-wrapper d-flex align-items-center">
+  <span class="share-label text-muted me-1">Share</span>
+  <span class="share-icons">
+    
+    
+    
+
+    
+      
+      <a
+        href="https://twitter.com/intent/tweet?text=Teaching%20A%20Robot%20To%20Walk%20-%20Part%20One%20-%20Maker%20Forge&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Freinforcement-learning-intro%2F"
+        data-bs-toggle="tooltip"
+        data-bs-placement="top"
+        title="Twitter"
+        target="_blank"
+        rel="noopener"
+        aria-label="Twitter"
+      >
+        <i class="fa-fw fa-brands fa-square-x-twitter"></i>
+      </a>
+    
+      
+      <a
+        href="https://www.facebook.com/sharer/sharer.php?title=Teaching%20A%20Robot%20To%20Walk%20-%20Part%20One%20-%20Maker%20Forge&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Freinforcement-learning-intro%2F"
+        data-bs-toggle="tooltip"
+        data-bs-placement="top"
+        title="Facebook"
+        target="_blank"
+        rel="noopener"
+        aria-label="Facebook"
+      >
+        <i class="fa-fw fab fa-facebook-square"></i>
+      </a>
+    
+      
+      <a
+        href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Freinforcement-learning-intro%2F&text=Teaching%20A%20Robot%20To%20Walk%20-%20Part%20One%20-%20Maker%20Forge"
+        data-bs-toggle="tooltip"
+        data-bs-placement="top"
+        title="Telegram"
+        target="_blank"
+        rel="noopener"
+        aria-label="Telegram"
+      >
+        <i class="fa-fw fab fa-telegram"></i>
+      </a>
+    
+
+    <button
+      id="copy-link"
+      aria-label="Copy link"
+      class="btn small"
+      data-bs-toggle="tooltip"
+      data-bs-placement="top"
+      title="Copy link"
+      data-title-succeed="Link copied successfully!"
+    >
+      <i class="fa-fw fas fa-link pe-none"></i>
+    </button>
+  </span>
+</div>
+
+  </div>
+  <!-- .post-tail-bottom -->
+</div>
+<!-- div.post-tail-wrapper -->
 
 
   
 
-    </div>
   
 </article>
 
@@ -1396,12 +1836,322 @@
             </div>
 
             
+              
+              
+
+
+
+  <section id="toc-wrapper" class="ps-0 pe-4 mb-5">
+    <h2 class="panel-heading ps-3 pt-2 mb-2">Contents</h2>
+    <nav id="toc"></nav>
+  </section>
+
+
+            
           </aside>
         </div>
 
         <div class="row">
           <!-- tail -->
           <div id="tail-wrapper" class="col-12 col-lg-11 col-xl-9 px-md-4">
+            
+              
+                
+                <!-- Recommend the other 3 posts according to the tags and categories of the current post. -->
+
+<!-- The total size of related posts -->
+
+
+<!-- An random integer that bigger than 0 -->
+
+
+<!-- Equals to TAG_SCORE / {max_categories_hierarchy} -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  <aside id="related-posts" aria-labelledby="related-label">
+    <h3 class="mb-4" id="related-label">Further Reading</h3>
+    <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
+      
+        <article class="col">
+          <a href="/posts/walking-case-studies/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+    class="small"
+  
+  data-ts="1697238000"
+  data-df="ll"
+  
+>
+  Oct 14, 2023
+</time>
+
+              <h4 class="pt-0 my-2">Let's Learn About Walking Robots</h4>
+              <div class="text-muted small">
+                <p>
+                  
+
+
+
+
+
+                  The biggest question I get asked when showing my bipedal robot to people is is “Does it walk?”.
+
+The answer is ‘no’, or rather, ‘not yet’.
+
+In order to understand the problem, we need to understand...
+                </p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
+          <a href="/posts/modular-biped-intro-video/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+    class="small"
+  
+  data-ts="1692054000"
+  data-df="ll"
+  
+>
+  Aug 15, 2023
+</time>
+
+              <h4 class="pt-0 my-2">Modular Biped Intro & History | YouTube</h4>
+              <div class="text-muted small">
+                <p>
+                  
+
+
+
+
+
+                  Since the creation of version 3 of the modular robotics framework, this video covers an overview of the project and the history of each version.
+
+The project has evolved over the last few years and...
+                </p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
+          <a href="/posts/disney-research/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+    class="small"
+  
+  data-ts="1696460400"
+  data-df="ll"
+  
+>
+  Oct  5, 2023
+</time>
+
+              <h4 class="pt-0 my-2">Disney Research Announcment | News</h4>
+              <div class="text-muted small">
+                <p>
+                  
+
+
+
+
+
+                  Disney Research has announced a new robot at IROS2023 that looks suspiciously like the BD-1 robot from Star Wars Jedi: Fallen Order.
+
+This post from David Scaramuzza from the University of Zurich s...
+                </p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+    </nav>
+  </aside>
+  <!-- #related-posts -->
+
+
+              
+                
+                <!-- Navigation buttons at the bottom of the post. -->
+
+<nav class="post-navigation d-flex justify-content-between" aria-label="Post Navigation">
+  
+  
+
+  
+    <a
+      href="/posts/walking-case-studies/"
+      class="btn btn-outline-primary"
+      aria-label="Older"
+    >
+      <p>Let's Learn About Walking Robots</p>
+    </a>
+  
+
+  
+    <div class="btn btn-outline-primary disabled" aria-label="Newer">
+      <p>-</p>
+    </div>
+  
+</nav>
+
+              
+                
+                <!--  The comments switcher -->
+
+
+              
             
 
             <!-- The Footer -->
@@ -1980,16 +2730,44 @@
 
   
 
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
 
 
-  <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.7.1/dist/jquery.min.js,npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js,npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/lazysizes@5.3.2/lazysizes.min.js,npm/magnific-popup@1.1.0/dist/jquery.magnific-popup.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js,npm/tocbot@4.21.1/dist/tocbot.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.7.1/dist/jquery.min.js,npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js,npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/lazysizes@5.3.2/lazysizes.min.js,npm/magnific-popup@1.1.0/dist/jquery.magnific-popup.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js,npm/dayjs@1.11.9/dayjs.min.js,npm/dayjs@1.11.9/locale/en.min.js,npm/dayjs@1.11.9/plugin/relativeTime.min.js,npm/dayjs@1.11.9/plugin/localizedFormat.min.js,npm/tocbot@4.21.1/dist/tocbot.min.js"></script>
 
 
 
 
 
 
-<script defer src="/assets/js/dist/page.min.js"></script>
+<script defer src="/assets/js/dist/post.min.js"></script>
 
 
 

@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Maker Forge</title>
   <subtitle>Guides and news relating to Maker Forge projects and videos.</subtitle>
-  <updated>2023-10-17T10:23:25+01:00</updated>
+  <updated>2023-10-18T07:19:33+01:00</updated>
   <author>
     <name>Dan Makes Things</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,52 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Teaching A Robot To Walk - Part One</title>
+    <link href="http://localhost:4000/posts/reinforcement-learning-intro/" rel="alternate" type="text/html" title="Teaching A Robot To Walk - Part One" />
+    <published>2023-10-18T00:00:00+01:00</published>
+  
+    <updated>2023-10-18T00:00:00+01:00</updated>
+  
+    <id>http://localhost:4000/posts/reinforcement-learning-intro/</id>
+    <content src="http://localhost:4000/posts/reinforcement-learning-intro/" />
+    <author>
+      <name>Dan Makes Things</name>
+    </author>
+
+  
+    
+    <category term="Robotics" />
+    
+    <category term="Guides" />
+    
+    <category term="Reinforcement Learning" />
+    
+    <category term="Simulation" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Following on from my recent post discussing examples of walking robots, it became clear that a logical next step would be to look at how we can teach a robot to walk using simulators and reinforcement learning.
+
+Let’s take a look at these concepts and how they can be applied to the Modular Biped project.
+
+What is a simulator?
+
+A simulator is a piece of software that allows us to create a virtua...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -190,48 +236,6 @@ The playlist for the entire showcase is now available on YouTube and linked belo
 I was very excited to see that the Modular Biped project was featured on the official Raspberry Pi news page. This is a great honour and I’m very grateful to the Raspberry Pi team for the recognition. The article focussed on the background of the project and the history of the development.
 
 You can read the article here: Build a bipedal companion robot - ...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Modular Biped Features | Build Log</title>
-    <link href="http://localhost:4000/posts/modular-biped-features/" rel="alternate" type="text/html" title="Modular Biped Features | Build Log" />
-    <published>2023-10-05T00:00:00+01:00</published>
-  
-    <updated>2023-10-11T19:27:23+01:00</updated>
-  
-    <id>http://localhost:4000/posts/modular-biped-features/</id>
-    <content src="http://localhost:4000/posts/modular-biped-features/" />
-    <author>
-      <name>Dan Makes Things</name>
-    </author>
-
-  
-    
-    <category term="Robotics" />
-    
-    <category term="Build Log" />
-    
-    <category term="Modular Robotics Framework" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      When I first started working on the modular biped project, I had a few features in mind. The way that the robot behaved would depend entirely on the sensors and actuators it had in it’s arsenal. For that reason (and because I enjoy trying new things!) I decided to add as many as reasonably possible, as long as they were relevant to the brief of a ‘desktop companion robot’.
-
-Sensing the world
-
-T...
     </summary>
   
 
