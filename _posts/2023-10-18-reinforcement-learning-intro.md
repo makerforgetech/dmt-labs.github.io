@@ -38,13 +38,13 @@ The current structure of the robot does not allow for lateral hip actuation (alt
 ## How do we create a simulator?
 
 Fortunately for us, there are a number of simulators already available, either free or for a fee. These include:
-- [Gazebo](http://gazebosim.org/)
+- [Gazebo](https://gazebosim.org/)
 - [Webots](https://cyberbotics.com/)
-- [V-REP](http://www.coppeliarobotics.com/)
+- [V-REP](https://www.coppeliarobotics.com/)
 - [Unity](https://unity.com/)
 - [Unreal Engine](https://www.unrealengine.com/en-US/)
 - [PyBullet](https://pybullet.org/wordpress/)
-- [Mujoco](http://www.mujoco.org/)
+- [Mujoco](https://www.mujoco.org/)
 - [OpenAI Gym](https://gym.openai.com/)
 
 Because I have no idea what I'm doing, and because I have a guide for Mujoco, I will be using that as an example. However, the concepts are similar for all of the simulators listed above.
