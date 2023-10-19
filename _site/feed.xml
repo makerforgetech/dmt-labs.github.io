@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Maker Forge</title>
   <subtitle>Guides and news relating to Maker Forge projects and videos.</subtitle>
-  <updated>2023-10-18T07:19:33+01:00</updated>
+  <updated>2023-10-19T16:36:21+01:00</updated>
   <author>
     <name>Dan Makes Things</name>
     <uri>http://localhost:4000/</uri>
@@ -24,7 +24,7 @@
     <link href="http://localhost:4000/posts/reinforcement-learning-intro/" rel="alternate" type="text/html" title="Teaching A Robot To Walk - Part One" />
     <published>2023-10-18T00:00:00+01:00</published>
   
-    <updated>2023-10-18T00:00:00+01:00</updated>
+    <updated>2023-10-18T07:21:02+01:00</updated>
   
     <id>http://localhost:4000/posts/reinforcement-learning-intro/</id>
     <content src="http://localhost:4000/posts/reinforcement-learning-intro/" />
