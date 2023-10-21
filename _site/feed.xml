@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Maker Forge</title>
   <subtitle>Guides and news relating to Maker Forge projects and videos.</subtitle>
-  <updated>2023-10-19T16:36:21+01:00</updated>
+  <updated>2023-10-21T13:12:12+01:00</updated>
   <author>
     <name>Dan Makes Things</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,88 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Interview with Emir Hamurcu</title>
+    <link href="http://localhost:4000/posts/interview-emir-hamurcu/" rel="alternate" type="text/html" title="Interview with Emir Hamurcu" />
+    <published>2023-10-21T00:00:00+01:00</published>
+  
+    <updated>2023-10-21T00:00:00+01:00</updated>
+  
+    <id>http://localhost:4000/posts/interview-emir-hamurcu/</id>
+    <content src="http://localhost:4000/posts/interview-emir-hamurcu/" />
+    <author>
+      <name>Dan Makes Things</name>
+    </author>
+
+  
+    
+    <category term="Interviews" />
+    
+    <category term="Robotics" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Emir Hamurcu is a 17 year old maker from Turkey who has been working on a bipedal robot using the Modular Robotics Framework. He very kindly allowed me to interview him about his project and his journey into robotics.
+
+Can you introduce yourself and share a bit about your background and how you got into robotics and making?
+
+Hello, I’m Emir Hamurcu. I’m 17 years old and I live in the Defne dist...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Git for Makers | Guides</title>
+    <link href="http://localhost:4000/posts/git-for-makers/" rel="alternate" type="text/html" title="Git for Makers | Guides" />
+    <published>2023-10-20T00:00:00+01:00</published>
+  
+    <updated>2023-10-20T00:00:00+01:00</updated>
+  
+    <id>http://localhost:4000/posts/git-for-makers/</id>
+    <content src="http://localhost:4000/posts/git-for-makers/" />
+    <author>
+      <name>Dan Makes Things</name>
+    </author>
+
+  
+    
+    <category term="Guides" />
+    
+    <category term="Git" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Many makers use software or 3D models as part of their projects and need a safe way to store those files and share them with others. Git is a great tool for this and is used by many makers and developers around the world. Let’s take a look at how the basics
+
+Image credit: Git
+
+What is Git?
+
+Git is software that allows us to track changes to files and folders. It is used by many developers and m...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -156,86 +238,6 @@ Raspberry Pi 5 vs Raspberry Pi 3B+ (Relevant Features)
       Feature
       Pi 5
  ...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Reddit Robotics Showcase 2023</title>
-    <link href="http://localhost:4000/posts/reddit-robotics-showcase/" rel="alternate" type="text/html" title="Reddit Robotics Showcase 2023" />
-    <published>2023-10-09T00:00:00+01:00</published>
-  
-    <updated>2023-10-09T08:56:26+01:00</updated>
-  
-    <id>http://localhost:4000/posts/reddit-robotics-showcase/</id>
-    <content src="http://localhost:4000/posts/reddit-robotics-showcase/" />
-    <author>
-      <name>Dan Makes Things</name>
-    </author>
-
-  
-    
-    <category term="Robotics" />
-    
-    <category term="News and Events" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Earlier in the year I was invited to speak about the Modular Robotics Framework on session 2 of the Reddit Robotics Showcase. This was a great opportunity to share the project with a wider audience and to talk about the history of the project and the future plans.
-
-The playlist for the entire showcase is now available on YouTube and linked below. There were a lot of really interesting projects,...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>September Digest | Maker Forge</title>
-    <link href="http://localhost:4000/posts/september-digest/" rel="alternate" type="text/html" title="September Digest | Maker Forge" />
-    <published>2023-10-08T00:00:00+01:00</published>
-  
-    <updated>2023-10-07T21:19:43+01:00</updated>
-  
-    <id>http://localhost:4000/posts/september-digest/</id>
-    <content src="http://localhost:4000/posts/september-digest/" />
-    <author>
-      <name>Dan Makes Things</name>
-    </author>
-
-  
-    
-    <category term="Robotics" />
-    
-    <category term="Modular Robotics Framework" />
-    
-    <category term="News and Events" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Featured on Official Raspberry Pi News
-
-I was very excited to see that the Modular Biped project was featured on the official Raspberry Pi news page. This is a great honour and I’m very grateful to the Raspberry Pi team for the recognition. The article focussed on the background of the project and the history of the development.
-
-You can read the article here: Build a bipedal companion robot - ...
     </summary>
   
 
