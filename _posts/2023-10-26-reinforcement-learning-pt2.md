@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Teaching a robot to walk - Part Two"
-date: 2023-10-26 
+date: 2323-10-26 
 categories: [Robotics, Guides, Reinforcement Learning, Simulation]
 tags: [robotics, walking, biped, reinforcement-learning]     # TAG names should always be lowercase
 image: /assets/img/posts/2023-10-26-reinforcement-learning-pt2/thumbnail.png
