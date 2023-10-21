@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Maker Forge</title>
   <subtitle>Guides and news relating to Maker Forge projects and videos.</subtitle>
-  <updated>2023-10-21T13:12:12+01:00</updated>
+  <updated>2023-10-21T13:15:33+01:00</updated>
   <author>
     <name>Dan Makes Things</name>
     <uri>http://localhost:4000/</uri>
@@ -17,46 +17,6 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
-
-  
-  <entry>
-    <title>Interview with Emir Hamurcu</title>
-    <link href="http://localhost:4000/posts/interview-emir-hamurcu/" rel="alternate" type="text/html" title="Interview with Emir Hamurcu" />
-    <published>2023-10-21T00:00:00+01:00</published>
-  
-    <updated>2023-10-21T00:00:00+01:00</updated>
-  
-    <id>http://localhost:4000/posts/interview-emir-hamurcu/</id>
-    <content src="http://localhost:4000/posts/interview-emir-hamurcu/" />
-    <author>
-      <name>Dan Makes Things</name>
-    </author>
-
-  
-    
-    <category term="Interviews" />
-    
-    <category term="Robotics" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Emir Hamurcu is a 17 year old maker from Turkey who has been working on a bipedal robot using the Modular Robotics Framework. He very kindly allowed me to interview him about his project and his journey into robotics.
-
-Can you introduce yourself and share a bit about your background and how you got into robotics and making?
-
-Hello, I’m Emir Hamurcu. I’m 17 years old and I live in the Defne dist...
-    </summary>
-  
-
-  </entry>
 
   
   <entry>
@@ -238,6 +198,44 @@ Raspberry Pi 5 vs Raspberry Pi 3B+ (Relevant Features)
       Feature
       Pi 5
  ...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Reddit Robotics Showcase 2023</title>
+    <link href="http://localhost:4000/posts/reddit-robotics-showcase/" rel="alternate" type="text/html" title="Reddit Robotics Showcase 2023" />
+    <published>2023-10-09T00:00:00+01:00</published>
+  
+    <updated>2023-10-09T08:56:26+01:00</updated>
+  
+    <id>http://localhost:4000/posts/reddit-robotics-showcase/</id>
+    <content src="http://localhost:4000/posts/reddit-robotics-showcase/" />
+    <author>
+      <name>Dan Makes Things</name>
+    </author>
+
+  
+    
+    <category term="Robotics" />
+    
+    <category term="News and Events" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Earlier in the year I was invited to speak about the Modular Robotics Framework on session 2 of the Reddit Robotics Showcase. This was a great opportunity to share the project with a wider audience and to talk about the history of the project and the future plans.
+
+The playlist for the entire showcase is now available on YouTube and linked below. There were a lot of really interesting projects,...
     </summary>
   
 
