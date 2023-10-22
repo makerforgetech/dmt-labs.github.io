@@ -36,27 +36,42 @@
     
   
     
+      
+  
+      
+        
+        
+  
+        
+          <!-- it's a local file path -->
+  
+        
+      
+    
   
     
       <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.2" />
-<meta property="og:title" content="Guides" />
+<meta property="og:title" content="Creating a Framework Laptop Custom Module" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="Guides and news relating to Maker Forge projects and videos." />
-<meta property="og:description" content="Guides and news relating to Maker Forge projects and videos." />
-<link rel="canonical" href="http://localhost:4000/categories/guides/" />
-<meta property="og:url" content="http://localhost:4000/categories/guides/" />
+<meta name="description" content="If you’re looking for a laptop that’s easy to upgrade and customize, look no further than the Framework Laptop. This laptop is designed to be modular, which means you can easily swap out components like the battery, storage, and even the ports." />
+<meta property="og:description" content="If you’re looking for a laptop that’s easy to upgrade and customize, look no further than the Framework Laptop. This laptop is designed to be modular, which means you can easily swap out components like the battery, storage, and even the ports." />
+<link rel="canonical" href="http://localhost:4000/posts/framework-laptop-module/" />
+<meta property="og:url" content="http://localhost:4000/posts/framework-laptop-module/" />
 <meta property="og:site_name" content="Maker Forge" />
-<meta property="og:type" content="website" />
-<meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Guides" />
+<meta property="og:image" content="http://localhost:4000/assets/img/posts/2023-10-22-framework-laptop-module/thumb.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-10-22T00:00:00+01:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="http://localhost:4000/assets/img/posts/2023-10-22-framework-laptop-module/thumb.png" />
+<meta property="twitter:title" content="Creating a Framework Laptop Custom Module" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"Guides and news relating to Maker Forge projects and videos.","headline":"Guides","url":"http://localhost:4000/categories/guides/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-10-22T00:00:00+01:00","datePublished":"2023-10-22T00:00:00+01:00","description":"If you’re looking for a laptop that’s easy to upgrade and customize, look no further than the Framework Laptop. This laptop is designed to be modular, which means you can easily swap out components like the battery, storage, and even the ports.","headline":"Creating a Framework Laptop Custom Module","image":"http://localhost:4000/assets/img/posts/2023-10-22-framework-laptop-module/thumb.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/framework-laptop-module/"},"url":"http://localhost:4000/posts/framework-laptop-module/"}</script>
 <!-- End Jekyll SEO tag -->
 
     
   
-    <title>Guides | Maker Forge
+    <title>Creating a Framework Laptop Custom Module | Maker Forge
     </title>
   
     <!--
@@ -108,9 +123,16 @@
     <link rel="stylesheet" href="/assets/css/jekyll-theme-chirpy.css">
   
     
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.21.1/dist/tocbot.min.css">
+    
 <!--   
+    
+      <link rel="stylesheet" href="">
      -->
   
+    
+      <!-- Manific Popup -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/magnific-popup.min.css">
     
   
     <!-- JavaScript -->
@@ -561,16 +583,10 @@
           
         
           
-            <span>
-              <a href="/categories">
-                Categories
-              </a>
-            </span>
-          
         
           
             
-              <span>Guides</span>
+              <span>Creating a Framework Laptop Custom Module</span>
             
 
           
@@ -584,7 +600,7 @@
     </button>
 
     <div id="topbar-title">
-      Category
+      Post
     </div>
 
     <button type="button" id="search-trigger" class="btn btn-link">
@@ -610,7 +626,7 @@
         <div class="row">
           <main
             aria-label="Main Content"
-            class="col-12 col-lg-11 col-xl-9 px-md-4 pb-5"
+            class="col-12 col-lg-11 col-xl-9 px-md-4"
           >
             
 
@@ -618,23 +634,522 @@
   
     
   
+    <!-- Refactor the HTML structure -->
+
+
+
+<!--
+  In order to allow a wide table to scroll horizontally,
+  we suround the markdown table with `<div class="table-wrapper">` and `</div>`
+-->
+
+
+
+<!--
+  Fixed kramdown code highlight rendering:
+  https://github.com/penibelst/jekyll-compress-html/issues/101
+  https://github.com/penibelst/jekyll-compress-html/issues/71#issuecomment-188144901
+-->
+
+
+
+<!-- Change the icon of checkbox -->
+
+
+<!-- images -->
+
+
+
+  
+  
+
+  <!-- CDN URL -->
+  
+
+  <!-- Add image path -->
+  
+
+  
+    
+      
+      
     
 
-
-
-<div id="page-category">
-  <h1 class="ps-lg-2">
-    <i class="far fa-folder-open fa-fw text-muted"></i>
-    Guides
-    <span class="lead text-muted ps-2">4</span>
-  </h1>
-
-  <ul class="content ps-0">
     
-      <li class="d-flex justify-content-between px-md-3">
-        <a href="/posts/framework-laptop-module/">Creating a Framework Laptop Custom Module</a>
-        <span class="dash flex-grow-1"></span>
-        <!--
+    
+
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+
+    
+
+    
+
+    <!-- lazy-load images <https://github.com/aFarkas/lazysizes#readme> -->
+    
+    
+
+    <!-- add image placeholder -->
+    
+      
+        <!-- add SVG placehoder -->
+        
+      
+    
+
+    <!-- Bypass the HTML-proofer test -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+      
+    
+
+    <!-- combine -->
+    
+
+  
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+
+    
+
+    
+
+    <!-- lazy-load images <https://github.com/aFarkas/lazysizes#readme> -->
+    
+    
+
+    <!-- add image placeholder -->
+    
+      
+    
+
+    <!-- Bypass the HTML-proofer test -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+      
+    
+
+    <!-- combine -->
+    
+
+  
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+
+    
+
+    
+
+    <!-- lazy-load images <https://github.com/aFarkas/lazysizes#readme> -->
+    
+    
+
+    <!-- add image placeholder -->
+    
+      
+    
+
+    <!-- Bypass the HTML-proofer test -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+      
+    
+
+    <!-- combine -->
+    
+
+  
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+
+    
+
+    
+
+    <!-- lazy-load images <https://github.com/aFarkas/lazysizes#readme> -->
+    
+    
+
+    <!-- add image placeholder -->
+    
+      
+    
+
+    <!-- Bypass the HTML-proofer test -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+      
+    
+
+    <!-- combine -->
+    
+
+  
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+
+    
+
+    
+
+    <!-- lazy-load images <https://github.com/aFarkas/lazysizes#readme> -->
+    
+    
+
+    <!-- add image placeholder -->
+    
+      
+    
+
+    <!-- Bypass the HTML-proofer test -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+      
+    
+
+    <!-- combine -->
+    
+
+  
+
+  
+
+
+
+<!-- Add header for code snippets -->
+
+
+
+<!-- Create heading anchors -->
+
+
+
+
+
+  
+  
+
+  
+    
+    
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+
+    
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+<!-- return -->
+
+
+
+
+<header>
+  <h1 data-toc-skip>Creating a Framework Laptop Custom Module</h1>
+
+  <div class="post-meta text-muted">
+    <!-- published date -->
+    <span>
+      Posted
+      <!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -644,91 +1159,224 @@
 
 <time
   
-    class="text-muted small text-nowrap"
-  
   data-ts="1697929200"
   data-df="ll"
+  
+    data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
   Oct 22, 2023
 </time>
 
-      </li>
+    </span>
+
+    <!-- lastmod date -->
     
-      <li class="d-flex justify-content-between px-md-3">
-        <a href="/posts/git-for-makers/">Git for Makers | Guides</a>
-        <span class="dash flex-grow-1"></span>
-        <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
+
+    
+      
+      
+      
+
+      
+
+      <div class="mt-3 mb-3">
+        <a href="/assets/img/posts/2023-10-22-framework-laptop-module/thumb.png" class="popup img-link preview-img shimmer"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 630'%3E%3C/svg%3E" data-src="/assets/img/posts/2023-10-22-framework-laptop-module/thumb.png"  alt="Preview Image" width="1200" height="630"  class="lazyload" data-proofer-ignore></a></div>
+    
+
+    <div class="d-flex justify-content-between">
+      <!-- author(s) -->
+      <span>
+        
+
+        By
+
+        <em>
+          
+            <a href="https://instagram.com/dan.makes.things">Dan Makes Things</a>
+          
+        </em>
+      </span>
+
+      <!-- read time -->
+      <!-- Calculate the post's reading time, and display the word count in tooltip -->
+
+
+
+<!-- words per minute -->
 
 
 
 
-<time
-  
-    class="text-muted small text-nowrap"
-  
-  data-ts="1697756400"
-  data-df="ll"
-  
+
+
+
+
+
+
+<!-- return element -->
+<span
+  class="readtime"
+  data-bs-toggle="tooltip"
+  data-bs-placement="bottom"
+  title="354 words"
 >
-  Oct 20, 2023
-</time>
+  <em>1 min</em> read</span>
 
-      </li>
-    
-      <li class="d-flex justify-content-between px-md-3">
-        <a href="/posts/reinforcement-learning-intro/">Teaching A Robot To Walk - Part One</a>
-        <span class="dash flex-grow-1"></span>
-        <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
+    </div>
+    <!-- .d-flex -->
+  </div>
+  <!-- .post-meta -->
+</header>
 
+<div class="content">
+  <p>If you’re looking for a laptop that’s easy to upgrade and customize, look no further than the Framework Laptop. This laptop is designed to be modular, which means you can easily swap out components like the battery, storage, and even the ports.</p>
 
+<p>One of the coolest things about the Framework Laptop is that you can create your own custom modules to add new functionality to the laptop. In this post, we’ll show you how to create a custom module to embed a USB receiver for a mouse.</p>
 
+<p><em>Image credit: <a href="https://frame.work/gb/en/marketplace/expansion-cards">Framework</a></em></p>
 
-<time
-  
-    class="text-muted small text-nowrap"
-  
-  data-ts="1697583600"
-  data-df="ll"
-  
->
-  Oct 18, 2023
-</time>
+<h2 id="step-1-gather-your-materials"><span class="me-2">Step 1: Gather Your Materials</span><a href="#step-1-gather-your-materials" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-      </li>
-    
-      <li class="d-flex justify-content-between px-md-3">
-        <a href="/posts/github-pages/">Maker Websites with GitHub Pages | Free Hosting</a>
-        <span class="dash flex-grow-1"></span>
-        <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
+<p>To create your custom module, you’ll need a few things:</p>
 
+<p><a href="/assets/img/posts/2023-10-22-framework-laptop-module/materials.png" class="popup img-link "><img data-src="/assets/img/posts/2023-10-22-framework-laptop-module/materials.png" alt="Materials" class="lazyload" data-proofer-ignore></a></p>
 
+<ul>
+  <li>A USB receiver for your mouse with a profile slim enough to fit within the expansion card</li>
+  <li>A USB-C to USB-A adapter shim (search for ‘5pcs Ultra Type-C USB-C to USB 2.0 OTG Adapter for Cell Phone Tablet’)</li>
+  <li>A Framework Laptop</li>
+  <li>A Framework Laptop expansion card STL file. You can find this <a href="https://www.printables.com/model/139879-framework-laptop-expansion-card/files">here</a>.</li>
+  <li>A 3D printer</li>
+</ul>
 
+<h2 id="step-2-print-the-expansion-card"><span class="me-2">Step 2: Print the Expansion Card</span><a href="#step-2-print-the-expansion-card" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-<time
-  
-    class="text-muted small text-nowrap"
-  
-  data-ts="1696287600"
-  data-df="ll"
-  
->
-  Oct  3, 2023
-</time>
+<p>The first thing you’ll need to do is 3D print the Framework Laptop expansion card. There are a <a href="https://www.printables.com/model/139879-framework-laptop-expansion-card/files">few files available</a>. I used the <code class="language-plaintext highlighter-rouge">Framework Module Base Slot.stl</code> and added a solid block to fill the gap between the USB receiver and the end of the expansion card.</p>
 
-      </li>
-    
-  </ul>
+<p><a href="/assets/img/posts/2023-10-22-framework-laptop-module/assembled2.png" class="popup img-link "><img data-src="/assets/img/posts/2023-10-22-framework-laptop-module/assembled2.png" alt="Assembled 2" class="lazyload" data-proofer-ignore></a></p>
+
+<h2 id="step-3-add-the-usb-receiver"><span class="me-2">Step 3: Add the USB Receiver</span><a href="#step-3-add-the-usb-receiver" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>Once you have the expansion card printed, you’ll need to add the USB receiver for your mouse.</p>
+
+<p>Slide the USB-C to USB-A adapter shim onto the USB receiver and then slide the USB receiver into the expansion card. Make sure the USB receiver is flush with the end of the expansion card.</p>
+
+<p><a href="/assets/img/posts/2023-10-22-framework-laptop-module/assembled1.png" class="popup img-link "><img data-src="/assets/img/posts/2023-10-22-framework-laptop-module/assembled1.png" alt="Assembled 1" class="lazyload" data-proofer-ignore></a></p>
+
+<h2 id="step-5-install-the-expansion-card"><span class="me-2">Step 5: Install the Expansion Card</span><a href="#step-5-install-the-expansion-card" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>Now that you have your custom module, it’s time to install it in your Framework Laptop. Simply slide the expansion card into the appropriate slot and you’re good to go!</p>
+
+<p><a href="/assets/img/posts/2023-10-22-framework-laptop-module/installed.png" class="popup img-link "><img data-src="/assets/img/posts/2023-10-22-framework-laptop-module/installed.png" alt="Installed" class="lazyload" data-proofer-ignore></a></p>
+
+<p>With your new custom module, you’ll be able to use your mouse without having to worry about catching or damaging the USB receiver. And if you ever need to upgrade or replace the module, it’s easy to do so with the Framework Laptop.</p>
+
+<p>Happy customizing!</p>
+
 </div>
+
+<div class="post-tail-wrapper text-muted">
+  <!-- categories -->
+  
+    <div class="post-meta mb-3">
+      <i class="far fa-folder-open fa-fw me-1"></i>
+      
+        <a href="/categories/guides/">Guides</a>,
+        <a href="/categories/framework-laptop/">Framework Laptop</a>
+    </div>
+  
+
+  <!-- tags -->
+  
+
+  <div
+    class="
+      post-tail-bottom
+      d-flex justify-content-between align-items-center mt-5 pb-2
+    "
+  >
+    <div class="license-wrapper">
+      
+        
+
+        This post is licensed under 
+        <a href="https://creativecommons.org/licenses/by/4.0/">
+          CC BY 4.0
+        </a>
+         by the author.
+      
+    </div>
+
+    <!-- Post sharing snippet -->
+
+<div class="share-wrapper d-flex align-items-center">
+  <span class="share-label text-muted me-1">Share</span>
+  <span class="share-icons">
+    
+    
+    
+
+    
+      
+      <a
+        href="https://twitter.com/intent/tweet?text=Creating%20a%20Framework%20Laptop%20Custom%20Module%20-%20Maker%20Forge&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fframework-laptop-module%2F"
+        data-bs-toggle="tooltip"
+        data-bs-placement="top"
+        title="Twitter"
+        target="_blank"
+        rel="noopener"
+        aria-label="Twitter"
+      >
+        <i class="fa-fw fa-brands fa-square-x-twitter"></i>
+      </a>
+    
+      
+      <a
+        href="https://www.facebook.com/sharer/sharer.php?title=Creating%20a%20Framework%20Laptop%20Custom%20Module%20-%20Maker%20Forge&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fframework-laptop-module%2F"
+        data-bs-toggle="tooltip"
+        data-bs-placement="top"
+        title="Facebook"
+        target="_blank"
+        rel="noopener"
+        aria-label="Facebook"
+      >
+        <i class="fa-fw fab fa-facebook-square"></i>
+      </a>
+    
+      
+      <a
+        href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fframework-laptop-module%2F&text=Creating%20a%20Framework%20Laptop%20Custom%20Module%20-%20Maker%20Forge"
+        data-bs-toggle="tooltip"
+        data-bs-placement="top"
+        title="Telegram"
+        target="_blank"
+        rel="noopener"
+        aria-label="Telegram"
+      >
+        <i class="fa-fw fab fa-telegram"></i>
+      </a>
+    
+
+    <button
+      id="copy-link"
+      aria-label="Copy link"
+      class="btn small"
+      data-bs-toggle="tooltip"
+      data-bs-placement="top"
+      title="Copy link"
+      data-title-succeed="Link copied successfully!"
+    >
+      <i class="fa-fw fas fa-link pe-none"></i>
+    </button>
+  </span>
+</div>
+
+  </div>
+  <!-- .post-tail-bottom -->
+</div>
+<!-- div.post-tail-wrapper -->
+
 
   
 
@@ -1250,12 +1898,256 @@
             </div>
 
             
+              
+              
+
+
+
+  <section id="toc-wrapper" class="ps-0 pe-4 mb-5">
+    <h2 class="panel-heading ps-3 pt-2 mb-2">Contents</h2>
+    <nav id="toc"></nav>
+  </section>
+
+
+            
           </aside>
         </div>
 
         <div class="row">
           <!-- tail -->
           <div id="tail-wrapper" class="col-12 col-lg-11 col-xl-9 px-md-4">
+            
+              
+                
+                <!-- Recommend the other 3 posts according to the tags and categories of the current post. -->
+
+<!-- The total size of related posts -->
+
+
+<!-- An random integer that bigger than 0 -->
+
+
+<!-- Equals to TAG_SCORE / {max_categories_hierarchy} -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  <aside id="related-posts" aria-labelledby="related-label">
+    <h3 class="mb-4" id="related-label">Further Reading</h3>
+    <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
+      
+        <article class="col">
+          <a href="/posts/github-pages/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+    class="small"
+  
+  data-ts="1696287600"
+  data-df="ll"
+  
+>
+  Oct  3, 2023
+</time>
+
+              <h4 class="pt-0 my-2">Maker Websites with GitHub Pages | Free Hosting</h4>
+              <div class="text-muted small">
+                <p>
+                  
+
+
+
+
+
+                  As a maker that loves to show my projects to the world, one of the challenges I have always faced is understanding the best platform to do that.
+
+Many years ago I worked in web development. It was,...
+                </p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
+          <a href="/posts/reinforcement-learning-intro/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+    class="small"
+  
+  data-ts="1697583600"
+  data-df="ll"
+  
+>
+  Oct 18, 2023
+</time>
+
+              <h4 class="pt-0 my-2">Teaching A Robot To Walk - Part One</h4>
+              <div class="text-muted small">
+                <p>
+                  
+
+
+
+
+
+                  Following on from my recent post discussing examples of walking robots, it became clear that a logical next step would be to look at how we can teach a robot to walk using simulators and reinforcem...
+                </p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
+          <a href="/posts/git-for-makers/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+    class="small"
+  
+  data-ts="1697756400"
+  data-df="ll"
+  
+>
+  Oct 20, 2023
+</time>
+
+              <h4 class="pt-0 my-2">Git for Makers | Guides</h4>
+              <div class="text-muted small">
+                <p>
+                  
+
+
+
+
+
+                  Many makers use software or 3D models as part of their projects and need a safe way to store those files and share them with others. Git is a great tool for this and is used by many makers and deve...
+                </p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+    </nav>
+  </aside>
+  <!-- #related-posts -->
+
+
+              
+                
+                <!-- Navigation buttons at the bottom of the post. -->
+
+<nav class="post-navigation d-flex justify-content-between" aria-label="Post Navigation">
+  
+  
+
+  
+    <a
+      href="/posts/git-for-makers/"
+      class="btn btn-outline-primary"
+      aria-label="Older"
+    >
+      <p>Git for Makers | Guides</p>
+    </a>
+  
+
+  
+    <div class="btn btn-outline-primary disabled" aria-label="Newer">
+      <p>-</p>
+    </div>
+  
+</nav>
+
+              
+                
+                <!--  The comments switcher -->
+
+
+              
             
 
             <!-- The Footer -->
@@ -1795,6 +2687,13 @@
 <!-- layout specified -->
 
 
+  
+
+  
+    <!-- image lazy-loading & popup & clipboard -->
+    
+  
+
 
 
 
@@ -1858,16 +2757,44 @@
 
   
 
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
 
 
-  <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.7.1/dist/jquery.min.js,npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js,npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/dayjs@1.11.9/dayjs.min.js,npm/dayjs@1.11.9/locale/en.min.js,npm/dayjs@1.11.9/plugin/relativeTime.min.js,npm/dayjs@1.11.9/plugin/localizedFormat.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.7.1/dist/jquery.min.js,npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js,npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/lazysizes@5.3.2/lazysizes.min.js,npm/magnific-popup@1.1.0/dist/jquery.magnific-popup.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js,npm/dayjs@1.11.9/dayjs.min.js,npm/dayjs@1.11.9/locale/en.min.js,npm/dayjs@1.11.9/plugin/relativeTime.min.js,npm/dayjs@1.11.9/plugin/localizedFormat.min.js,npm/tocbot@4.21.1/dist/tocbot.min.js"></script>
 
 
 
 
 
 
-<script defer src="/assets/js/dist/misc.min.js"></script>
+<script defer src="/assets/js/dist/post.min.js"></script>
 
 
 

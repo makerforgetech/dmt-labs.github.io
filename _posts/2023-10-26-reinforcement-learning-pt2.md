@@ -23,6 +23,8 @@ To test a model, simply drag and drop the models into the simulator while runnin
 
 ## Create a custom model
 
+https://studywolf.wordpress.com/2020/03/22/building-models-in-mujoco/
+
 
 
 

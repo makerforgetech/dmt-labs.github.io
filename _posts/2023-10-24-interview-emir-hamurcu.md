@@ -89,7 +89,7 @@ These customizations were vital in making the project align with our specific ne
 
 ## Could you describe a moment during this project when you felt particularly excited, proud, or motivated by your progress or a breakthrough?
 
-![Top](/assets/img/posts/2023-10-24-interview-emir-hamurcu/IMG_20231020_191433_618.jpg){: .w-50 .right}
+![Gesture](/assets/img/posts/2023-10-24-interview-emir-hamurcu/IMG_20231022_112837_321.jpg){: .w-50 .right}
 
 ### Moments of Excitement and Pride
 When I first started the project, I was particularly excited. The most significant moment of excitement was when I began the project. Of course, besides this excitement, there were other moments that got me excited. For instance, I was thrilled when the mayor of our city visited our village, and I explained the main concept of the project and the changes I made. Another unforgettable moment was when I traveled to Ankara with my cousin, who is a faculty member at Middle East Technical University (METU). While at METU, I was excited to talk to mechatronics and software engineering students about Dan, my own project, and Dan's main project. I felt proud of myself after these moments, knowing that I had contributed to the project.
@@ -105,7 +105,7 @@ Undertaking such a project at a young age and developing my own projects may not
 
 ## Were there any unexpected challenges or setbacks you faced either with the project or on your robotics journey in general?
 
-![Controller](/assets/img/posts/2023-10-24-interview-emir-hamurcu/IMG_20231020_100913_343.jpg){: .w-50 .right}
+![Controller](/assets/img/posts/2023-10-24-interview-emir-hamurcu/IMG_20231022_112840_813.jpg){: .w-50 .right}
 
 ### Getting Started and Motivation
 When starting the project, I realized that the source of the difficulties I faced in getting started was not related to the project or the framework, but rather to the act of starting itself. The beginning stage is always contentious, but I would always remind myself, "Just start somehow in any area, because starting is half the success." The most challenging aspect of this project for me was related to mechanics. Lately, the issue we've been working on the most with Dan and the community is getting the robot to walk in a balanced manner. Currently, the robot was falling while walking, and we are working intensively and seeking solutions to solve this problem.
@@ -118,7 +118,7 @@ The first time I started learning about the structure of the robot, I took my fi
 
 ### Hitches and Quests for Solutions
 
-![Back](/assets/img/posts/2023-10-24-interview-emir-hamurcu/IMG_20231020_191442_650.jpg){: .w-50 .right}
+![Back](/assets/img/posts/2023-10-24-interview-emir-hamurcu/IMG_20231022_112844_743.jpg){: .w-50 .right}
 
 Speaking of hitches with the robot, as I mentioned above, the biggest challenge for me was the walking aspect of the robot. I conducted a lot of research on this and came up with ideas. For example, I considered adding electromagnets under the feet, thinking that when a step is taken, the magnet would come into play and prevent the robot from falling. However, I abandoned this idea due to the issue of drawing high current. I also thought about adding strong springs to the foot model, but I gave up on that idea because it could put excessive strain on the PLA body structure. I am still working on this issue and hope to find a solution soon.
 
