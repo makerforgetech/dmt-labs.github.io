@@ -31,3 +31,7 @@ I was contacted by the team at LINKMICRO who asked if I would be interested in r
 Digital microscopes can be very useful for PCB inspection and soldering, as well as for inspecting components and other small objects. They can also be used for other tasks such as inspecting the quality of 3D prints.
 
 I am in the process of recording a review video and accompanying article for the microscope, which I will be posting in the coming weeks. In the meantime, you can find out more about the microscope on [Amazon](https://www.amazon.de/dp/B09VT1Z6L8).
+
+# Rebrand of GitHub Repository
+
+The GitHub organisation hosting the community and project files has been re-branded from `dmt-labs` to `makerforgetech`. All links should have been updated, but if you have any issues accessing anything, please let me know. 
