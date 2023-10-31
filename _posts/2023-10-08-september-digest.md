@@ -33,7 +33,7 @@ A more detailed article about each finalist (including the Modular Biped project
 
 After looking for a way to share my projects and ideas, a conversation with [Kevin Mcaleer](https://www.instagram.com/kevinmcaleer/) prompted me to create a website to host my projects and blog posts. I wanted to create a place where I could document my progress and learning as well as share guides and news from the wider maker community.
 
-If you're reading this then it means you are here, so welcome! I hope you enjoy the content and find it useful. If you have any questions or suggestions, please feel free to get in touch via the [discussion group](https://github.com/dmt-labs/modular-biped/discussions).
+If you're reading this then it means you are here, so welcome! I hope you enjoy the content and find it useful. If you have any questions or suggestions, please feel free to get in touch via the [discussion group](hhttps://bit.ly/maker-forge-community).
 
 ## Raspberry Pi 5 Announced
 

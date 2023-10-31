@@ -18,9 +18,9 @@ I hope you enjoy the content and find it useful. If you have any questions or su
 
 [YouTube](https://www.youtube.com/DanMakesThings)
 
-[GitHub](https://github.com/dmt-labs)
+[GitHub](https://bit.ly/modular-biped)
 
-[Discussion Group](https://github.com/dmt-labs/modular-biped/discussions)
+[Discussion Group](https://bit.ly/maker-forge-community)
 
 ## About Maker Forge
 

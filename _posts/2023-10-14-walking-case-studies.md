@@ -113,4 +113,4 @@ With such a wide range of options available for mobility of the modular biped, i
 
 Reinforcement learning is also an interesting avenue to investigate as it would allow the robot to learn to walk without the need for complex manual programming. This would also allow the robot to adapt to changes in the environment, such as a change in the ground plane or the addition of an obstacle.
 
-I will likely investigate this approach in the future, so if you have suggestions for a simulation tool or reinforcement learning framework, or other examples of mobile biped robots, please let me know in the [community](https://github.com/dmt-labs/modular-biped/discussions).
+I will likely investigate this approach in the future, so if you have suggestions for a simulation tool or reinforcement learning framework, or other examples of mobile biped robots, please let me know in the [community](https://bit.ly/maker-forge-community).

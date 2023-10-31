@@ -22,7 +22,7 @@ I have been heavily involved this month in pre-work for a new phase of the Modul
 
 There will be challenges here around the mechanical design of the robot, as the current design does not allow for lateral hip actuation. The community and I are currently looking into ways to overcome this that can be 3D printed and accessible.
 
-If you're interested in joining those discussions or have some ideas, please feel free to join the [discussion group](https://github.com/dmt-labs/modular-biped/discussions)
+If you're interested in joining those discussions or have some ideas, please feel free to join the [discussion group](https://bit.ly/maker-forge-community)
 
 # LINKMICRO Digital microscope review
 
