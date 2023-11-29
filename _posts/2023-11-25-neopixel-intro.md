@@ -9,6 +9,8 @@ image: /assets/img/posts/2023-11-25-neopixel-intro/microscope1.png
 
 Ever wondered how NeoPixels work? Let's take a look at two examples: the WS2812B and SK6812, and how they can be used to create a chain of individually addressable RGB LEDs.
 
+_Images captured using a [LINKMICRO LM249MS](https://www.amazon.de/dp/B09VT1Z6L8)_
+
 ## Introduction
 
 NeoPixels are a type of individually addressable RGB LED that can be used to create a chain of LEDs that can be controlled by a single microcontroller pin. They are available in a variety of form factors, including strips, rings, and matrices.
