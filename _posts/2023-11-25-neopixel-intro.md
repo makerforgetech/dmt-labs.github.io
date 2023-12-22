@@ -30,7 +30,6 @@ The data signal specifies for each NeoPixel in the chain the RGB (and sometimes 
 There are a few differences between SK6812 and WS2812B:
 1. SK6812 has a wider color range, including RGB, RGBW, WWA, and single white. But WS2812B is usually only RGB.
 1. Compared with WS2812B, SK6812 has almost no voltage drop. 
-1. Both of them are 4 pin devices, but they require different programming and therefore they may not be used together.
 
 ## How NeoPixels are assembled
 
