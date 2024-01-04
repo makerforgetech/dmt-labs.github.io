@@ -4,6 +4,8 @@ title: Local Development on Remote Machines with Mutagen
 date: 2023-12-22 21:00
 categories: [Guides, Software]
 tags: [guide, development]
+image: /assets/img/posts/2023-12-22-mutagen-intro/thumb.png
+
 ---
 
 Mutagen is a tool that allows you to develop code on your local machine, and have it automatically synced to a remote machine. 
@@ -60,4 +62,12 @@ Beta:
 	Connected: Yes
 Status: Scanning files
 
+```
+
+## Resuming sessions
+
+When the device is disconnected, the session will be paused. To resume the session, use the `mutagen sync resume` command.
+
+```
+mutagen sync resume modular-biped
 ```
