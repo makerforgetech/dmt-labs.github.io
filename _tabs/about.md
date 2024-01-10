@@ -22,6 +22,30 @@ I hope you enjoy the content and find it useful. If you have any questions or su
 
 [Discussion Group](https://bit.ly/maker-forge-community)
 
+## Music and Sounds
+
+All music used on YouTube videos and other social media accounts is either provided, attribution free by YouTube Studio, or is licensed under Creative Commons.
+
+> YouTube Audio Library licence
+>
+> You can use this audio track in any of your videos, including videos that you monetise. No attribution is required.
+>
+> YouTube may credit the artist and link the Audio Library from your video.
+>
+> You may not make available, distribute or perform the music files from this library separately from videos and other content into which you have incorporated these music files (e.g. standalone distribution of these files is not permitted).
+
+The following tracks are used in the videos:
+
+- Scarlet Fire (Sting) by Otis McDonald
+- Nine Lives by Unicorn Heads
+- Night Run Away by An Jone
+- Funk Down (Sting) by MK2
+- Eyes on You (Sting) by Network 415
+- Baroque Coffee House by Doug Maxwell
+- American Idle by RKVC
+
+Other music and sounds provided directly by social media account and credited automatically on the relevant post (if required).
+
 ## About Maker Forge
 
 Welcome to Maker Forge, your ultimate destination for all things open source hobby robotics and DIY innovation! In an age where technology evolves at a rapid pace, enthusiasts and makers like you are constantly seeking new avenues to unleash your creativity and bring your robotic dreams to life. Maker Forge is here to empower you on that exciting journey.
