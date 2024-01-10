@@ -48,6 +48,8 @@ Other music and sounds provided directly by social media account and credited au
 
 ## About Maker Forge
 
+> Generated content, feel free to skip this section.
+
 Welcome to Maker Forge, your ultimate destination for all things open source hobby robotics and DIY innovation! In an age where technology evolves at a rapid pace, enthusiasts and makers like you are constantly seeking new avenues to unleash your creativity and bring your robotic dreams to life. Maker Forge is here to empower you on that exciting journey.
 
 Our website is a vibrant hub where you can explore a treasure trove of guides, project progress updates, and a wealth of knowledge on a wide range of topics related to open source hobby robotics. Whether you're a seasoned robotics aficionado or just dipping your toes into this captivating world, Maker Forge is your trusted companion.
