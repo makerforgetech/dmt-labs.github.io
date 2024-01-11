@@ -39,6 +39,8 @@ To begin synchronization and forwarding, create new mutagen session.
 ```
 mutagen sync create --name=web-app-code ~/project user@example.org:~/project
 ```
+Note: To ensure any conflicts are resolved from the local directory, add `--sync-mode=two-way-resolved` to the above command.
+
 This command specifies a name for the session (`web-app-code`), the local directory to synchronize (`~/project`), and the remote directory to synchronize (`user@example.org:~/project`).
 
 This command will configure the session and will ask for the remote machine's password. If you want to avoid entering the password each time you can use SSH keys to authenticate.
