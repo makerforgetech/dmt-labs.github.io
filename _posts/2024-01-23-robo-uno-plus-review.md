@@ -41,9 +41,7 @@ There are 20 projects ready to go on the GitHub repo, to make getting started ea
 
 ![RoboUNO+](/assets/img/posts/2024-01-23-robo-uno-plus-review/PXL_20240115_104759295.jpg){:.w-50}
 
-First impressions are good. As I received a pre-release board I did need to burn the bootloader myself, but this was easy to do using another Arduino Uno as an ISP programmer.
-
-Once the bootloader was burned I was able to upload the Blink sketch and get the on-board LEDs flashing. The upload process is no different to the Arduino UNO, and the same selections can be made in the Arduino IDE.
+First impressions are good. I was able to upload the Blink sketch and get the on-board LEDs flashing easily. The upload process is no different to the Arduino UNO, and the same selections can be made in the Arduino IDE.
 
 Next I tried out the built-in components using the example sketches provided. The OLED display worked first time, and the buttons and buzzer were easy to test using the example sketches.
 
