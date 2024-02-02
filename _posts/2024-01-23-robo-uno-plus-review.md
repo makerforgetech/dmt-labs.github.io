@@ -57,6 +57,9 @@ I don't have any JST-SH modules that aren't already mounted in projects, but the
 
 Overall I'd say this is a great board for beginners and experienced arduino users who are looking for a portable board that offers this additional functionality. For me personally I can see this being something I can take with me to events and workshops to demonstrate projects without having to carry around a bag of components and worry about wiring. It would also be a great first board for teaching STEM subjects to a group of students as there is no wiring to worry about getting wrong or taking time to configure.
 
+## Watch the full video review
+
+{% include embed/youtube.html id='gygQLiHijZI' %}
 
 ## Take a look for yourself
 
