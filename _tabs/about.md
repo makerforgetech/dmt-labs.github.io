@@ -20,7 +20,7 @@ I hope you enjoy the content and find it useful. If you have any questions or su
 
 [GitHub](https://bit.ly/modular-biped)
 
-[Discussion Group](https://bit.ly/maker-forge-community)
+[Discussion Group](https://bit.ly/makerforge-community)
 
 ## Music and Sounds
 
