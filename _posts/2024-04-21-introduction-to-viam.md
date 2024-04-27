@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Build Robots Faster with Viam!
-date: 2024-04-27 12:00
+date: 2024-04-27 00:00
 categories: [Robotics, Viam, Python] 
 image: /assets/img/posts/2024-04-21-introduction-to-viam/thumb.png
 
