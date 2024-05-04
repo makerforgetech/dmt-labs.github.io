@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Viam Modules Made Simple
-date: 2024-05-04 10:00
+date: 2024-05-04 00:00
 categories: [Robotics, Viam, Python] 
 image: /assets/img/posts/2024-04-30-viam-modules/1.png
 ---
