@@ -59,3 +59,13 @@ One of the jewels in our crown is the Modular Robotics Framework, a creation by 
 Join us as we embark on a journey through the intricate realm of open source robotics, where the possibilities are limited only by your imagination. Whether you're looking to build your first robot, enhance your existing creations, or simply stay updated on the latest breakthroughs in the field, Maker Forge is your gateway to a community of like-minded individuals and a repository of invaluable insights.
 
 So, gear up, grab your soldering iron, and let's forge a future of innovation together at Maker Forge!
+
+## About Dan
+
+Dan is a seasoned Software Engineering Manager with over 20 years of experience as a software engineer and architect. 
+
+Four years ago, he began exploring robotics as a hobby, which quickly evolved into a large-scale bipedal robotics project that has inspired a wide audience. 
+
+After making the project open-source and 3D printable, Dan built a vibrant community around it, with over 25k followers. 
+
+Through his platform, MakerForge.tech, Dan shares insights and project details while collaborating with partners and fellow makers to continue expanding the project’s impact.
