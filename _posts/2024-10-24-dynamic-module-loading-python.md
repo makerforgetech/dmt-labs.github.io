@@ -200,7 +200,6 @@ from module_loader import ModuleLoader
 def main():
     # Dynamically load and initialize modules
     loader = ModuleLoader(config_folder="config")
-    loader.load_yaml_files()
     module_instances = loader.load_modules()
 
     # Access instances by name
