@@ -221,3 +221,7 @@ Unix dependencies installed:
  - imx500-all
 =============================
 ```
+
+## Read More
+
+The initial modular architecture for this approach was detailed in an earlier blog post. You can read more about it here: [Dynamic Module Loading in Python](/posts/dynamic-module-loading-python/).
