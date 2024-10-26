@@ -66,18 +66,18 @@ Each module has a corresponding YAML configuration file that defines whether the
 ```yaml
 servos:
   enabled: true
-  path: "modules/actuators/servo"
+  path: "modules.actuators.servo.Servo" # Include class name here
   instances:
     - name: "leg_l_hip"
       id: 0
       pin: 9
       range: [0, 180]
-      start_pos: 40
+      start: 40
     - name: "leg_l_knee"
       id: 1
       pin: 10
       range: [0, 180]
-      start_pos: 10
+      start: 10
 ```
 
 In this example, the `servos` module is enabled, and two instances (`leg_l_hip` and `leg_l_knee`) are defined with their respective configurations. The `path` points to where the module is located within the project folder.
@@ -92,9 +92,31 @@ Here’s an implementation of `ModuleLoader`:
 import os
 import yaml
 import importlib.util
+from pubsub import pub
 
 class ModuleLoader:
     def __init__(self, config_folder='config'):
+        """
+        ModuleLoader class
+        :param config_folder: folder containing the module configuration files
+        
+        Example config file:
+        config/modules.yml
+        ---
+        buzzer:
+            enabled: true # Required
+            path: "modules.audio.buzzer.Buzzer" # Required
+            config: # Passed as **kwargs to the module's __init__ method
+                pin: 27
+                name: 'buzzer'
+        
+        Example:
+        loader = ModuleLoader()
+        modules = loader.load_modules()
+        
+        Reference module once loaded:
+        translator_inst = modules['Translator']        
+        """
         self.config_folder = config_folder
         self.modules = self.load_yaml_files()
 
@@ -117,26 +139,31 @@ class ModuleLoader:
         """Dynamically load and instantiate the modules based on the config."""
         instances = {}  # Use a dictionary to store instances for easy access
         for module in self.modules:
-            module_path = module['path']  # e.g., "modules/actuators/servo"
-            module_name = module_path.split('/')[-1]  # e.g., "servo"
-            instances_config = module.get('instances', [module.get('config')])  # Get all instances or config
+            print(f"Enabling {module['path']}")
+            # get path excluding the last part
+            module_path = module['path'].rsplit('.', 1)[0].replace('.', '/')  # e.g., "modules.servo"
+            module_name = module['path'].split('.')[-1]  # e.g., "Servo"
+            instances_config = module.get('instances', [module.get('config')])  # Get all instances or just use config 
+            if instances_config[0] is None:
+                instances_config = [{}]
 
             # Dynamically load the module
-            spec = importlib.util.spec_from_file_location(module_name, f"{module_path}/{module_name}.py")
+            spec = importlib.util.spec_from_file_location(module_name, f"{module_path}.py")
             mod = importlib.util.module_from_spec(spec)
             spec.loader.exec_module(mod)
 
             # Create instances of the module
             for instance_config in instances_config:
                 # Pass the instance config to the module's __init__ method as **kwargs
-                instance_name = instance_config.get('name')  # Use the instance name as the key
-                instance = getattr(mod, module_name.capitalize())(**instance_config)
+                instance_name = module_name + '_' + instance_config.get('name') if instance_config.get('name') is not None else module_name # Use the module name and instance name as the key or module_name if single instance
+                instance = getattr(mod, module_name)(**instance_config)
 
                 # Store the instance in the dictionary
                 instances[instance_name] = instance
+                pub.sendMessage('log', msg=f"[ModuleLoader] Loaded module: {module_name} instance: {instance_name}")
 
+        print("All modules loaded")
         return instances  # Return the dictionary of instances
-
 ```
 
 #### How It Works:
@@ -171,14 +198,14 @@ If you wanted direct access to the instance created by the model loader, you can
 from module_loader import ModuleLoader
 
 def main():
-    # Load all enabled modules
-    module_loader = ModuleLoader(config_folder='config')
-    module_instances = module_loader.load_modules()
+    # Dynamically load and initialize modules
+    loader = ModuleLoader(config_folder="config")
+    loader.load_yaml_files()
+    module_instances = loader.load_modules()
 
     # Access instances by name
-    my_module = module_instances.get("my_module")
-    if my_module:
-        my_module.start()  # Assuming there's a start method
+    vision = module_instances['vision'] # Access the instance by name
+    leg_servo = module_instances['Servo_leg_l_hip'] # Access one of multiple instances (the module name is prepended to the instance name in this case) )
 
 if __name__ == '__main__':
     main()
@@ -192,6 +219,7 @@ from pubsub import pub
 pub.sendMessage('mytopic', data='somedata') # Publish to a topic
 pub.subscribe(self.handler_method, 'anothertopic') # subscribe to another topic
 ```
+This is the primary communication method between modules in the Modular Biped Project. A timing loop fires events at intervals, triggering functionality in the modules.
 
 ## Writing a New Module for This Architecture
 
@@ -208,8 +236,10 @@ class Buzzer:
     def __init__(self, **kwargs):
         self.pin = kwargs.get('pin')  # Required, no default
         print(f"Initializing Buzzer on pin {self.pin}")
+        pub.subscribe(self.buzz, 'buzz') # Subscribe to the buzz topic
     
     def buzz(self):
+        # Buzzer functionality goes here
         print(f"Buzzer on pin {self.pin} is buzzing!")
 ```
 
@@ -220,9 +250,9 @@ Create a corresponding YAML configuration file in the `config` folder that speci
 ```yaml
 buzzer:
   enabled: true
-  path: "modules/output/buzzer"
+  path: "modules.output.buzzer"
   config:
-    pin: 26
+    pin: 27
 ```
 
 ### 3. Load the Module Dynamically
