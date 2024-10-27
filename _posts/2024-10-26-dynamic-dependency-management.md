@@ -54,6 +54,8 @@ motion:
       - RPi.GPIO
     unix:
       - wiringpi
+    additional:
+      - "https://www.example.com/motion_install.md"
 ```
 
 ### Modified `install.sh` Script
@@ -62,6 +64,7 @@ The install script below:
 1. Parses `python` and `unix` dependencies from each module's YAML file.
 2. Installs Unix dependencies with `apt-get install` and Python dependencies with `pip install`.
 3. Uses a **Python helper** embedded within the script to read YAML files (using `pyyaml`).
+4. Outputs a summary of installed modules and dependencies. This includes any additional URLs for manual configuration.
 
 Here’s the modified `install.sh` script:
 
@@ -72,9 +75,10 @@ Here’s the modified `install.sh` script:
 python3 -m venv --system-site-packages myenv
 source myenv/bin/activate
 
-# Initialize arrays for dependencies and active module names
+# Initialize arrays for dependencies and additional setup URLs
 PYTHON_DEPENDENCIES=()
 UNIX_DEPENDENCIES=()
+ADDITIONAL_URLS=()
 ACTIVE_MODULES=()
 
 # Helper function to parse dependencies from YAML files using Python
@@ -87,20 +91,21 @@ module_name = os.path.basename(config_file).replace('.yml', '')  # Get the modul
 try:
     with open(config_file) as f:
         config = yaml.safe_load(f)
-        # Check if the top level of the config is a dictionary to avoid AttributeError
         if isinstance(config, dict):
             for section in config.values():
-                # Check if module is active before parsing dependencies
-                if isinstance(section, dict) and section.get('enabled') is True:
+                # Ensure each section has 'enabled' set to true and 'dependencies' exists
+                if isinstance(section, dict) and section.get('enabled', False) and 'dependencies' in section:
                     print(f"MODULE:{module_name}")
-                    if 'dependencies' in section:
-                        for dep_type, deps in section['dependencies'].items():
-                            if dep_type == 'python':
-                                for dep in deps:
-                                    print(f"PYTHON:{dep}")
-                            elif dep_type == 'unix':
-                                for dep in deps:
-                                    print(f"UNIX:{dep}")
+                    for dep_type, deps in section['dependencies'].items():
+                        if dep_type == 'python':
+                            for dep in deps:
+                                print(f"PYTHON:{dep}")
+                        elif dep_type == 'unix':
+                            for dep in deps:
+                                print(f"UNIX:{dep}")
+                        elif dep_type == 'additional':
+                            for url in deps:
+                                print(f"ADDITIONAL:{module_name}:{url}")
 except yaml.YAMLError as e:
     print(f"Error reading {config_file}: {e}", file=sys.stderr)
 EOF
@@ -116,6 +121,8 @@ for config_file in config/*.yml; do
       PYTHON_DEPENDENCIES+=("${dependency#PYTHON:}")
     elif [[ $dependency == UNIX:* ]]; then
       UNIX_DEPENDENCIES+=("${dependency#UNIX:}")
+    elif [[ $dependency == ADDITIONAL:* ]]; then
+      ADDITIONAL_URLS+=("${dependency#ADDITIONAL:}")
     fi
   done < <(parse_dependencies "$config_file")
 done
@@ -124,19 +131,20 @@ done
 UNIQUE_PYTHON_DEPENDENCIES=($(echo "${PYTHON_DEPENDENCIES[@]}" | tr ' ' '\n' | sort -u | tr '\n' ' '))
 UNIQUE_UNIX_DEPENDENCIES=($(echo "${UNIX_DEPENDENCIES[@]}" | tr ' ' '\n' | sort -u | tr '\n' ' '))
 UNIQUE_ACTIVE_MODULES=($(echo "${ACTIVE_MODULES[@]}" | tr ' ' '\n' | sort -u | tr '\n' ' '))
+UNIQUE_ADDITIONAL_URLS=($(echo "${ADDITIONAL_URLS[@]}" | tr ' ' '\n' | sort -u | tr '\n' ' '))
 
-# Update apt-get and install Unix dependencies
-if [ ${#UNIQUE_UNIX_DEPENDENCIES[@]} -ne 0 ]; then
-  sudo apt-get update
-  for dep in "${UNIQUE_UNIX_DEPENDENCIES[@]}"; do
-    sudo apt-get install -y "$dep"
-  done
-fi
+# # Update apt-get and install Unix dependencies
+# if [ ${#UNIQUE_UNIX_DEPENDENCIES[@]} -ne 0 ]; then
+#   sudo apt-get update
+#   for dep in "${UNIQUE_UNIX_DEPENDENCIES[@]}"; do
+#     sudo apt-get install -y "$dep"
+#   done
+# fi
 
-# Install Python dependencies explicitly using the virtual environment's pip
-for dep in "${UNIQUE_PYTHON_DEPENDENCIES[@]}"; do
-  myenv/bin/python3 -m pip install "$dep"
-done
+# # Install Python dependencies explicitly using the virtual environment's pip
+# for dep in "${UNIQUE_PYTHON_DEPENDENCIES[@]}"; do
+#   myenv/bin/python3 -m pip install "$dep"
+# done
 
 # Set execute permissions for additional scripts
 chmod 777 startup.sh stop.sh
@@ -157,8 +165,14 @@ echo -e "\nUnix dependencies installed:"
 for dep in "${UNIQUE_UNIX_DEPENDENCIES[@]}"; do
   echo " - $dep"
 done
-echo "============================="
 
+if [ ${#UNIQUE_ADDITIONAL_URLS[@]} -ne 0 ]; then
+echo -e "\nACTION REQUIRED: Additional manual configuration required for the following modules:"
+for dep in "${UNIQUE_ADDITIONAL_URLS[@]}"; do
+  echo " - $dep"
+done
+fi
+echo "============================="
 ```
 
 ### Explanation of Changes
@@ -194,7 +208,7 @@ Remember, only **active modules** will have their dependencies installed.
 
 ```plaintext
 ==== Installation Summary ====
-Active modules installed: 12
+Active modules installed: 13
  - animate
  - braillespeak
  - buzzer
@@ -206,21 +220,26 @@ Active modules installed: 12
  - servos
  - tracking
  - translator
+ - universalremote
  - vision
 
 Python dependencies installed:
  - adafruit-circuitpython-seesaw
  - googletrans==3.1.0a0
  - gpiozero
+ - lirc
  - pigpio
+ - pubsub
  - pypubsub
  - python3-munkres
  - python3-opencv
 
 Unix dependencies installed:
  - imx500-all
-=============================
-```
+ - lirc
+
+ACTION REQUIRED: Additional manual configuration required for the following modules:
+ - motion:https://www.example.com/motion_install.md
 
 ## Read More
 
