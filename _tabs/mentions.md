@@ -10,8 +10,13 @@ Find something missing? Let me know!
 
 ## 2024
 
-[SentryBOT - OpenBCI Interface](https://github.com/makerforgetech/modular-biped/discussions/66)
+[Thingiverse Innovate and Automate Challenge](https://www.thingiverse.com/challenges/pcbway)
 
+[Interview with Jon Durrant](https://www.youtube.com/watch?v=8pvR5WhKHZ0)
+
+[Arduino Days 2024 - Modular Biped](https://www.youtube.com/embed/wSdFAJ3gcpM?si=8Zu_aSdaqDEUm7ey)
+
+[SentryBOT - OpenBCI Interface](https://github.com/makerforgetech/modular-biped/discussions/66)
 
 ## 2023
 
