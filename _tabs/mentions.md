@@ -10,7 +10,7 @@ Find something missing? Let me know!
 
 ## 2024
 
-[Thingiverse Innovate and Automate Challenge](https://www.thingiverse.com/challenges/pcbway)
+[Thingiverse Innovate and Automate Challenge (WINNER!)](https://www.thingiverse.com/challenges/pcbway)
 
 [Interview with Jon Durrant](https://www.youtube.com/watch?v=8pvR5WhKHZ0)
 
