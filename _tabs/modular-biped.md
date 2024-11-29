@@ -4,7 +4,7 @@ icon: fas fa-info-circle
 order: 0
 ---
 
-As a project to keep myself sane during the COVID lockdowns, I began looking into making a companion robot using Raspberry Pi, Arduino and 3D printing as a study in how to build a desktop companion robot. I wanted to make something that was fully autonomous and responded to the presense and interaction of people in the room. It also needed to be reasonably affordable (as much as robotics can be!) and accessible.
+As a project to keep myself sane during the COVID lockdowns, I began looking into making a companion robot using Raspberry Pi, Arduino and 3D printing as a study in how to build a desktop companion robot. I wanted to make something that was fully autonomous and responded to the presence and interaction of people in the room. It also needed to be reasonably affordable (as much as robotics can be!) and accessible.
 
 The project has evolved over the last few years and a community has begun to grow around it. This led to a number of changes to allow the platform to be more modular, allowing any number of robots to be created using the software with reuse of any relevant hardware components and modules.
 
@@ -18,25 +18,25 @@ The Modular Biped Robot project is designed to provide a flexible and modular fr
 
 The project is designed to be modular, meaning any components that are not required for the implementation can be removed and the functionality can be disabled by removing the initialisation in the `main.py` python file. Similarly, new modules can be integrated as easily by following the guide below.
 
-[Modules](https://github.com/dmt-labs/modular-biped/wiki/Software:-Modules)
-
-[Creating a Module](https://github.com/dmt-labs/modular-biped/wiki/Software:-Creating-a-module)
+[Modules](https://github.com/dmt-labs/modular-biped/wiki/Software)
 
 ## Versioning
 
-There have been 3 versions of this project, version 2 was the smaller and less stable build detailed in the playlist below. 
+There have been 3 versions of this project, 'Archie' was the smaller and less stable build detailed in the playlist below. 
 
 [Watch the introduction on YouTube](https://youtu.be/Nqp4vuDWgpw?si=W-4mwJQCqWwtEBne)
 
-[Companion Robot v2 Playlist](https://www.youtube.com/watch?v=2DVJ5xxAuWY&list=PL_ua9QbuRTv6Kh8hiEXXVqywS8pklZraT)
+[Companion Robot 'Archie' Playlist](https://www.youtube.com/watch?v=2DVJ5xxAuWY&list=PL_ua9QbuRTv6Kh8hiEXXVqywS8pklZraT)
 
-The current development is ongoing on version 3. This documentation is exclusively for version 3.
+'Buddy' is the second release and is a more stable and feature rich version of the project. This version uses a Raspberry Pi 5 and is the current release of the project.
+
+Future development is ongoing on a new release named 'Cody'.
 
 ## Platforms
 
-Although the project was built on the Raspberry Pi 3B+ and Arduino Pro Mini, community members are working on the integration of other platforms such as the Jetson Nano, Raspberry Pi 4 & 5, Arduin Nano and the DFRobot UniHiker SBC.
+Although the project was built on the Raspberry Pi and Arduino Pro Mini, community members are working on the integration of other platforms such as the Jetson Nano.
 
-We plan on sharing any relevant files to support these platforms so feel free to join the community and share your experience / requirments.
+We plan on sharing any relevant files to support these platforms so feel free to join the community and share your experience / requirements.
 
 ## Contributions and Discussions
 
@@ -53,6 +53,8 @@ The wiki and files are available on the GitHub repository linked below:
 [Modular Biped Wiki](https://github.com/dmt-labs/modular-biped/wiki)
 
 [Repository](https://github.com/dmt-labs/modular-biped)
+
+[Join our Discord](https://bit.ly/makerforge-community)
 
 [Discussions](https://github.com/dmt-labs/modular-biped/discussions)
 
