@@ -2,7 +2,7 @@
 layout: post
 title: Dynamic Dependency Management for Modular Architecture
 date: 2024-10-26 20:44
-category: Guides
+categories: [Guides, Modular Biped, Software]
 tags: [guide, dependencies, modular, architecture, automation, python, unix]
 ---
 

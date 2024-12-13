@@ -2,7 +2,7 @@
 layout: post
 title: Dynamic Module Loading in Python
 date: 2024-10-24 19:01
-categories: [Guides, Software]
+categories: [Guides, Modular Biped, Software]
 tags: [guide, development]
 ---
 

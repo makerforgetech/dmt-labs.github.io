@@ -2,7 +2,7 @@
 layout: post
 title: Nooelec SDR with Modular Biped for Real-Time 433 MHz IoT Signal Processing
 date: 2024-10-28 11:50
-categories: [Guides, Software, SDR]
+categories: [Guides, Modular Biped, Software, SDR]
 tags: [guide, SDR, IoT, python]
 ---
 
