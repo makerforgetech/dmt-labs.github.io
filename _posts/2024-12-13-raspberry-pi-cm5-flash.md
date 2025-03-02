@@ -6,7 +6,7 @@ category: [Raspberry Pi Compute Module 5]
 tags: [guide, cm5, errors]
 ---
 
-I recently purchased a Raspberry Pi Compute Module 5 (CM5) and wanted to flash it with Ubuntu 20.04, but was faced with an error when trying to flash the image. This post will show you how to flash a Raspberry Pi CM5 with Ubuntu 20.04.
+I recently purchased a Raspberry Pi Compute Module 5 (CM5) and wanted to flash it with the Raspberry Pi OS using a laptop running Ubuntu 20.04, but was faced with an error when trying to flash the image. This post will show you how to flash a Raspberry Pi CM5 using an Ubuntu 20.04 device.
 
 
 ## Prerequisites
