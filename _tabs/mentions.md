@@ -4,11 +4,19 @@ icon: fas fa-archive
 order: 6
 ---
 
-This page holds a list of blog posts and news articles where the Modular Biped or Maker Forge.tech has been featured.
+This page holds a list of blog posts, videos, podcasts and news articles where the Modular Biped or MakerForge.tech has been featured.
 
 Find something missing? Let me know!
 
+## 2025
+
+[Robot Talk Podcast - Interview](https://www.robottalk.org/2025/02/14/episode-109-dan-nicholson/)
+
+[Breaking Breadboards Talk - Building a biped companion robot](https://www.youtube.com/live/dQ3WG0pJU5c?si=_8ZJOhxEiHocPYvB)
+
 ## 2024
+
+[PCBWay Community](https://www.pcbway.com/project/shareproject/Bipedal_Companion_Robot_Open_Source_3D_Printable_c31a5d65.html)
 
 [Thingiverse Innovate and Automate Challenge (WINNER!)](https://www.thingiverse.com/challenges/pcbway)
 
