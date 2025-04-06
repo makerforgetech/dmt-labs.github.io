@@ -10,6 +10,8 @@ Find something missing? Let me know!
 
 ## 2025
 
+[Makers Central 2025](https://www.makerscentral.co.uk/the-makers/dan-makes-things/)
+
 [Robot Talk Podcast - Interview](https://www.robottalk.org/2025/02/14/episode-109-dan-nicholson/)
 
 [Breaking Breadboards Talk - Building a biped companion robot](https://www.youtube.com/live/dQ3WG0pJU5c?si=_8ZJOhxEiHocPYvB)
