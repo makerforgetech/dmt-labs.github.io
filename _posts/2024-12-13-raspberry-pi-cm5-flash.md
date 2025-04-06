@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Flashing a Raspberry Pi CM5 with Ubuntu 20.04
+title: Flashing a Raspberry Pi CM5 using a device running Ubuntu 20.04
 date: 2024-12-12 17:52
 category: [Raspberry Pi Compute Module 5]
 tags: [guide, cm5, errors]
