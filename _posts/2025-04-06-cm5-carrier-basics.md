@@ -85,7 +85,7 @@ To flash the CM5 when using onboard eMMC:
 
 👉 For more detail, check:
 [Octavo Systems USB Design Tutorial](https://octavosystems.com/app_notes/osd335x-design-tutorial/osd335x-lesson-2-minimal-linux-boot/osd335x-lesson-2-usb-circuitry/)  
-[Shawn Hymel’s CM4 Design Video Series](https://www.youtube.com/c/ShawnHymel)
+[Shawn Hymel’s CM4 Design Video (Part 1)](https://youtu.be/ypcPJC_umPQ)
 
 ### 📌 Additional Layout Tips
 - **Fiducials**: Place two 1mm fiducials in opposite corners to help pick-and-place machines align the board.
