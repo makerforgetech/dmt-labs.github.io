@@ -1,5 +1,5 @@
 ---
-title: Modular Robotics Framework
+title: Modular Biped
 icon: fas fa-info-circle
 order: 0
 ---
@@ -10,7 +10,11 @@ The project has evolved over the last few years and a community has begun to gro
 
 ## Overview
 
-![Full project (front view)](/assets/img/pages/modular-robotics/full_project_front_thumb.jpg)
+<div style="display: flex; justify-content: space-between;">
+  <img src="/assets/img/pages/modular-robotics/archie.jpg" alt="Archie" height="300"/>
+  <img src="/assets/img/pages/modular-robotics/buddy.jpg" alt="Buddy" height="300"/>
+  <img src="/assets/img/pages/modular-robotics/cody.jpg" alt="Cody" height="300"/>
+</div>
 
 The Modular Biped Robot project is designed to provide a flexible and modular framework for robotics development using Python and C++ on the Raspberry Pi and Arduino platforms. It aims to enable developers, robotics enthusiasts, and curious individuals to experiment, create, and customize their own biped robots. With a range of features and functionalities and the option to add your own easily, the Modular Biped Robot Project offers an exciting opportunity to explore the world of robotics.
 
