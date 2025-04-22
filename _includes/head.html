@@ -13,7 +13,7 @@
     <meta name="google-adsense-account" content="ca-pub-2442495657220975">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2442495657220975"
      crossorigin="anonymous"></script>
-  
+
     {% capture seo_tags %}
       {% seo title=false %}
     {% endcapture %}
@@ -82,6 +82,8 @@
     {% if site.toc and page.toc %}
       <link rel="stylesheet" href="{{ site.data.origin[type].toc.css | relative_url }}">
     {% endif %}
+
+    <link rel="stylesheet" href="/assets/css/makerforge.css" />
 <!--   
     {% if page.layout == 'post' or page.layout == 'page' or page.layout == 'home' %}
       <link rel="stylesheet" href="{{ site.data.origin[type]['lazy-polyfill'].css | relative_url }}">
