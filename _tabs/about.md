@@ -14,13 +14,46 @@ I hope you enjoy the content and find it useful. If you have any questions or su
 
 ## Useful Links
 
-[Instagram](https://www.instagram.com/dan.makes.things/)
+- [Instagram](https://www.instagram.com/dan.makes.things/) / [Threads](https://www.threads.net/@dan.makes.things)
+- [YouTube](https://www.youtube.com/DanMakesThings)
+- [GitHub - Modular Biped Software](https://bit.ly/modular-biped) & [Discussion](https://bit.ly/maker-forge-community)
+- [Discord (Discussion Group)](https://bit.ly/makerforge-community)
+- [Buy me a coffee :)](https://www.buymeacoffee.com/makerforgetech)
 
-[YouTube](https://www.youtube.com/DanMakesThings)
+## About Dan
 
-[GitHub](https://bit.ly/modular-biped)
+Dan is a Software Engineering Manager with over 20 years of experience as a software engineer and architect. 
 
-[Discussion Group](https://bit.ly/makerforge-community)
+Having always been interested in robotics and electronics, Dan began experimenting with Arduino microcontrollers and later Raspberry Pis, which led to a passion for building and programming robots.
+
+During COVID lockdown he began a 'small' project which evolved into a [Modular Biped Robotics Framework](/modular-biped/). After making the project open-source and 3D printable, Dan built a vibrant community around it, with over 25k followers. The project also won the [Thingiverse Innovate and Automate Challenge in 2024](https://www.thingiverse.com/challenges/pcbway), and was a finalist in the [RealVNC Raspberry Pi Prize](https://www.realvnc.com/en/blog/realvnc-raspberry-pi-prize-finalist-dan-nicholson-companion-robot/).
+
+Through the MakerForge.tech website, Dan shares learnings, guides, and project details while collaborating with partners and fellow makers to continue evolving the modular biped, as well as other projects which can be found on the site.
+
+## Branding
+
+Links below to branding relating to Dan Makes Things, MakerForge.tech and associated projects.
+
+**MakerForge.tech Logos**
+
+- [Transparent](/assets/branding/makerforge_logo_horizontal_transparent.svg) (preferred)
+- [White Background](/assets/branding/makerforge_logo_horizontal_white_bg.svg)
+- [Black Background](/assets/branding/makerforge_logo_horizontal_black_bg.svg)
+- [Square Transparent](/assets/branding/makerforge_logo_square_transparent.svg)
+- [Square White Background](/assets/branding/makerforge_logo_square_white_bg.svg)
+- [Square Black Background](/assets/branding/makerforge_logo_square_black_bg.svg)
+
+**Dan Makes Things Logos**
+
+- [Black](/assets/branding/dmt_logo_black.png) (preferred)
+- [All 'Dan Makes Things' Logos (Zip)](/assets/branding/dmt_logos.zip)
+
+
+**Other Images**
+
+- [Dan Profile (with Modular Biped)](/assets/branding/dan_with_biped.jpg)
+- [Dan Profile](/assets/branding/dan_profile.jpg)
+- [Modular Biped (Transparent Background)](/assets/branding/robot_transp.png)
 
 ## Music and Sounds
 
@@ -45,13 +78,3 @@ The following tracks are used in the videos:
 - American Idle by RKVC
 
 Other music and sounds provided directly by social media account and credited automatically on the relevant post (if required).
-
-## About Dan
-
-Dan is a seasoned Software Engineering Manager with over 20 years of experience as a software engineer and architect. 
-
-Four years ago, he began exploring robotics as a hobby, which quickly evolved into a large-scale bipedal robotics project that has inspired a wide audience. 
-
-After making the project open-source and 3D printable, Dan built a vibrant community around it, with over 25k followers. 
-
-Through his platform, MakerForge.tech, Dan shares insights and project details while collaborating with partners and fellow makers to continue expanding the project’s impact.

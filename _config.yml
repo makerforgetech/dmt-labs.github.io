@@ -20,7 +20,7 @@ timezone: Europe/London
 
 title: Maker Forge # the main title
 
-tagline: We forge makers # it will display as the sub-title
+tagline: Forging makers since 2020 # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   Guides and news relating to Maker Forge projects and videos.
@@ -34,12 +34,12 @@ github:
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: Dan Makes Things
+  name: MakerForge.tech
   links:
     # The first element serves as the copyright owner's link
-    - https://instagram.com/dan.makes.things
     - https://youtube.com/DanMakesThings
-    - https://github.com/dmt-labs/modular-biped
+    - https://instagram.com/dan.makes.things
+    - https://github.com/makerforgetech/modular-biped
 
 google_site_verification: # fill in to your verification string
 
