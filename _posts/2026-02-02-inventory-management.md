@@ -23,6 +23,7 @@ This Python-based application lets you add, search, and edit product information
 - **Add Product with AI:**
 	- Enter a product name or title and let the app use ChatGPT to auto-populate all product fields.
 	- Review and edit the generated details.
+	- Note: You will need credit on your OpenAI account to use the AI features.
 - **Edit Product Details:**
 	- Update any field, including location, quantity, and custom attributes.
 	- Soft-delete products if needed.
@@ -53,6 +54,7 @@ This Python-based application lets you add, search, and edit product information
 	 ```sh
 	 export OPENAI_API_KEY=sk-...yourkey...
 	 ```
+	 Note: You will need credit on your OpenAI account to use the AI features.
 
 ## Usage
 
