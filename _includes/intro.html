@@ -1,94 +1,92 @@
-<article class="px-1">
-  <h1>Welcome to Maker Forge!</h1>
-  <p>
-    The mission of Maker Forge is to inspire and empower makers, hobbyists, and
-    enthusiasts to explore the world of open-source robotics, electronics & 3D
-    printing. Whether you're a seasoned pro or just starting out, the projects
-    and resources here are designed to help you unleash your creativity and
-    bring your ideas to life.
-  </p>
-</article>
+<section class="community-strip px-1" aria-labelledby="community-title">
+  <div class="section-heading">
+    <p class="section-kicker">Follow Dan Makes Things</p>
+    <h2 id="community-title">Make, learn, share.</h2>
+  </div>
+  <div class="community-links">
+    {% for entry in site.data.contact %}
+      {% case entry.type %}
+        {% when 'github', 'twitter' %}
+          {% capture social_url %}https://{{ entry.type }}.com/{{ site[entry.type].username }}{% endcapture %}
+        {% when 'rss' %}
+          {% assign social_url = '/feed.xml' | relative_url %}
+        {% else %}
+          {% assign social_url = entry.url %}
+      {% endcase %}
+      {% if social_url %}
+        <a class="community-link community-link-{{ entry.type }}" href="{{ social_url }}"{% unless entry.noblank %} target="_blank" rel="noopener noreferrer"{% endunless %}>
+          <i class="{{ entry.icon }}" aria-hidden="true"></i>
+          <span>{{ entry.type | replace: '-', ' ' }}</span>
+          <b aria-hidden="true">&#8599;</b>
+        </a>
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>
 
-<section class="projects-section px-1">
-  <h2>Check out the Projects</h2>
+<section class="projects-section px-1" id="projects" aria-labelledby="projects-title">
+  <div class="section-heading section-heading-row">
+    <div>
+      <p class="section-kicker">The workbench</p>
+      <h2 id="projects-title">Projects in progress</h2>
+    </div>
+    <span class="section-count">06 builds</span>
+  </div>
   <div class="project-grid">
-    
     <article class="project-card">
-      <a href="/modular-biped-archie">
-        <img
-          src="/assets/project_thumb_archie.png"
-          alt="Archie - Modular Biped Robot"
-        />
+      <a href="{{ '/modular-biped-archie' | relative_url }}">
+        <img src="{{ '/assets/project_thumb_archie.png' | relative_url }}" alt="Archie - Modular Biped Robot" />
         <h3>Archie - Biped Robot</h3>
       </a>
-        <p>
-          The original, smaller biped robot. Archie is a legacy build focused on early modular experimentation with custom PCBs and basic walking features.
-        </p>
+      <p>The original, smaller biped robot. A legacy build focused on early modular experimentation.</p>
     </article>
 
     <article class="project-card">
-      <a href="/modular-biped">
-        <img
-          src="/assets/project_thumb_buddy.jpg"
-          alt="Buddy - Biped Robot"
-        />
+      <a href="{{ '/modular-biped' | relative_url }}">
+        <img src="{{ '/assets/project_thumb_buddy.jpg' | relative_url }}" alt="Buddy - Biped Robot" />
         <h3>Buddy - Biped Robot</h3>
       </a>
-        <p>
-          The current stable and recommended build. Buddy is larger, more robust, and ideal for reliable operation, education, and community projects.
-        </p>
+      <p>The current stable build: robust, modular, and ideal for reliable operation and education.</p>
     </article>
+
     <article class="project-card">
-      <a href="/modular-biped-cody">
-        <img
-          src="/assets/project_thumb_cody.jpg"
-          alt="Cody - Biped Robot"
-        />
+      <a href="{{ '/modular-biped-cody' | relative_url }}">
+        <img src="{{ '/assets/project_thumb_cody.jpg' | relative_url }}" alt="Cody - Biped Robot" />
         <h3>Cody - Biped Robot</h3>
       </a>
-        <p>
-          The next-generation preview release. Cody features advanced modularity, a custom CM5 carrier board, and expanded connectivity for makers and robotics enthusiasts.
-        </p>
+      <p>A next-generation preview release with a custom CM5 carrier board and expanded connectivity.</p>
     </article>
 
     <article class="project-card">
-      <a href="/lightsaber">
-        <img
-          src="/assets/project_thumb_lightsaber.jpg"
-          alt="Raspberry Pi Pico Lightsaber"
-        />
+      <a href="{{ '/lightsaber' | relative_url }}">
+        <img src="{{ '/assets/project_thumb_lightsaber.jpg' | relative_url }}" alt="Raspberry Pi Pico Lightsaber" />
         <h3>Raspberry Pi Pico Lightsaber</h3>
       </a>
-      <p>Build a lightsaber hilt with a Raspberry Pi Pico and Neopixels</p>
+      <p>Build a lightsaber hilt with a Raspberry Pi Pico and Neopixels.</p>
     </article>
 
     <article class="project-card">
-      <a href="/magic-map">
-        <img
-          src="/assets/project_thumb_map.jpg"
-          alt="Magic Map"
-        />
+      <a href="{{ '/magic-map' | relative_url }}">
+        <img src="{{ '/assets/project_thumb_map.jpg' | relative_url }}" alt="Magic Map" />
         <h3>Magic Map</h3>
       </a>
-      <p>
-        Build a Harry Potter style map that shows the location of a user using a
-        hidden LED matrix
-      </p>
+      <p>A hidden LED matrix map that shows the location of a user.</p>
     </article>
 
     <article class="project-card">
-      <a href="/cm5-carrier-board">
-        <img
-          src="/assets/project_thumb_cm5.png"
-          alt="CM5 Carrier Board"
-        />
+      <a href="{{ '/cm5-carrier-board' | relative_url }}">
+        <img src="{{ '/assets/project_thumb_cm5.png' | relative_url }}" alt="CM5 Carrier Board" />
         <h3>CM5 Carrier Board</h3>
       </a>
-      <p>
-        Streamline the Raspberry Pi 5 for robotics with this custom carrier board designed for the Compute Module 5.
-      </p>
+      <p>A custom carrier board designed to streamline the Raspberry Pi CM5 for robotics.</p>
     </article>
   </div>
 </section>
 
-<h2>Read the Articles</h2>
+<div class="articles-heading px-1">
+  <div>
+    <p class="section-kicker">Notes from the bench</p>
+    <h2 id="articles">Latest articles</h2>
+  </div>
+  <a href="{{ '/archives' | relative_url }}">View all articles <span aria-hidden="true">&#8594;</span></a>
+</div>
